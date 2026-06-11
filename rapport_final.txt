@@ -1,0 +1,782 @@
+======================================================================
+  LANDGUARD — RAPPORT FINAL CONSOLIDE
+  Date : 11/06/2026 20:30:02
+  Dossiers : 200
+======================================================================
+
+[D001] moussa_ouali  |  label=standard  |  alerte=SIGNAL_NEURONAL
+  NN=speculateur conf=0.79  |  Dossier conforme aux normes foncières
+
+[D002] hassan_bassole  |  label=standard  |  alerte=ATYPIQUE
+  NN=atypique conf=0.95  |  Dossier conforme aux normes foncières
+
+[D003] joseph_sidibe  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.93  |  Dossier conforme aux normes foncières
+
+[D004] hamidou_dama  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.60  |  Dossier conforme aux normes foncières
+
+[D005] sandwidi_kabore  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.98  |  Dossier conforme aux normes foncières
+
+[D006] mamadou_dama  |  label=standard  |  alerte=SIGNAL_NEURONAL
+  NN=speculateur conf=0.44  |  Dossier conforme aux normes foncières
+
+[D007] bonkoungou_dama  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.99  |  Dossier conforme aux normes foncières
+
+[D008] tinga_ganame  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.96  |  Dossier conforme aux normes foncières
+
+[D009] sandwidi_yabre  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.92  |  Dossier conforme aux normes foncières
+
+[D010] tiendrebeogo_sidibe  |  label=standard  |  alerte=SIGNAL_NEURONAL
+  NN=speculateur conf=0.68  |  Dossier conforme aux normes foncières
+
+[D011] pierre_sidibe  |  label=fraude_sophistiquee  |  alerte=FRAUDE_CONFIRMEE
+  NN=fraudeur_probable conf=0.99  |  Fraude complexe multi-composantes
+  → HY-01: nn=fraudeur ∧ accaparement_urbain → fraude_confirmee
+  → HY-03: nn=fraudeur ∧ blanchiment_circulaire → fraude_confirmee
+  → HY-08: nn∈{spec,fraud} ∧ accaparement ∧ prete_nom → fraude_confirmee
+  Règles: accaparement_urbain, prete_nom, blanchiment_circulaire, speculation, lien_familial_suspect, traite_familial
+
+[D012] jean_zongo  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.77  |  Dossier conforme aux normes foncières
+
+[D013] emmanuel_traore  |  label=speculateur  |  alerte=SUSPICION_ELEVEE
+  NN=speculateur conf=1.00  |  Reventes fréquentes avec plus-values élevées
+  → HY-04: nn=speculateur ∧ speculation → suspicion_elevee
+  Règles: speculation
+
+[D014] aminata_sidibe  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.84  |  Dossier conforme aux normes foncières
+
+[D015] lankoande_diallo  |  label=accaparement  |  alerte=SIGNAL_NEURONAL
+  NN=speculateur conf=0.99  |  Concentration excessive de parcelles
+  Règles: accaparement_urbain, lien_familial_suspect
+
+[D016] tiendrebeogo_dama  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.84  |  Dossier conforme aux normes foncières
+
+[D017] felix_zerbo  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.98  |  Dossier conforme aux normes foncières
+
+[D018] felix_bassole  |  label=conflit_interet  |  alerte=SUSPICION_ELEVEE
+  NN=atypique conf=1.00  |  Traitement partial de dossier administratif
+  → HY-05: nn=atypique ∧ prete_nom → suspicion_elevee
+  Règles: conflit_direct, prete_nom, traite_familial
+
+[D019] hussein_sidibe  |  label=fraude_sophistiquee  |  alerte=SIGNAL_NEURONAL
+  NN=speculateur conf=1.00  |  Fraude complexe multi-composantes
+  Règles: accaparement_urbain, blanchiment_circulaire, lien_familial_suspect, traite_familial, iban_partage
+
+[D020] wendpanga_konfe  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.90  |  Dossier conforme aux normes foncières
+
+[D021] pingdwendé_ouedraogo  |  label=fraude_sophistiquee  |  alerte=SUSPICION_ELEVEE
+  NN=speculateur conf=1.00  |  Fraude complexe multi-composantes
+  → HY-04: nn=speculateur ∧ speculation → suspicion_elevee
+  Règles: accaparement_urbain, conflit_direct, blanchiment_circulaire, speculation, lien_familial_suspect, traite_familial
+
+[D022] baptiste_zongo  |  label=speculateur  |  alerte=SUSPICION_ELEVEE
+  NN=speculateur conf=1.00  |  Reventes fréquentes avec plus-values élevées
+  → HY-04: nn=speculateur ∧ speculation → suspicion_elevee
+  Règles: speculation
+
+[D023] aminata_dama  |  label=accaparement  |  alerte=SIGNAL_NEURONAL
+  NN=speculateur conf=1.00  |  Concentration excessive de parcelles
+  Règles: accaparement_urbain, lien_familial_suspect
+
+[D024] salimata_yabre  |  label=standard  |  alerte=SIGNAL_NEURONAL
+  NN=speculateur conf=0.37  |  Dossier conforme aux normes foncières
+
+[D025] yago_kabore  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.75  |  Dossier conforme aux normes foncières
+
+[D026] idrissa_ouedraogo  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.56  |  Dossier conforme aux normes foncières
+
+[D027] joel_diallo  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.98  |  Dossier conforme aux normes foncières
+
+[D028] raphael_zongo  |  label=standard  |  alerte=ATYPIQUE
+  NN=atypique conf=0.74  |  Dossier conforme aux normes foncières
+
+[D029] lankoande_sawadogo  |  label=conflit_interet  |  alerte=SUSPICION_ELEVEE
+  NN=atypique conf=1.00  |  Traitement partial de dossier administratif
+  → HY-05: nn=atypique ∧ prete_nom → suspicion_elevee
+  Règles: conflit_direct, prete_nom
+
+[D030] ibrahim_kere  |  label=standard  |  alerte=SIGNAL_NEURONAL
+  NN=speculateur conf=0.61  |  Dossier conforme aux normes foncières
+
+[D031] abdoul_sawadogo  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.94  |  Dossier conforme aux normes foncières
+
+[D032] noufou_dambre  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.98  |  Dossier conforme aux normes foncières
+
+[D033] souleymane_traore  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.74  |  Dossier conforme aux normes foncières
+
+[D034] daouda_sidibe  |  label=standard  |  alerte=ATYPIQUE
+  NN=atypique conf=0.52  |  Dossier conforme aux normes foncières
+
+[D035] tarpaga_bassole  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.80  |  Dossier conforme aux normes foncières
+
+[D036] pascal_zerbo  |  label=conflit_interet  |  alerte=STANDARD
+  NN=standard conf=0.93  |  Traitement partial de dossier administratif
+  Règles: conflit_direct, lien_familial_suspect
+
+[D037] hawa_ganame  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.43  |  Dossier conforme aux normes foncières
+
+[D038] boukary_zerbo  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.85  |  Dossier conforme aux normes foncières
+
+[D039] salam_ouali  |  label=standard  |  alerte=ATYPIQUE
+  NN=atypique conf=0.45  |  Dossier conforme aux normes foncières
+
+[D040] yameogo_zerbo  |  label=conflit_interet  |  alerte=SUSPICION_ELEVEE
+  NN=atypique conf=1.00  |  Traitement partial de dossier administratif
+  → HY-05: nn=atypique ∧ prete_nom → suspicion_elevee
+  Règles: conflit_direct, prete_nom
+
+[D041] ali_dambre  |  label=standard  |  alerte=ATYPIQUE
+  NN=atypique conf=0.52  |  Dossier conforme aux normes foncières
+
+[D042] moussa_konfe  |  label=conflit_interet  |  alerte=SUSPICION_ELEVEE
+  NN=atypique conf=1.00  |  Traitement partial de dossier administratif
+  → HY-05: nn=atypique ∧ prete_nom → suspicion_elevee
+  Règles: conflit_direct, prete_nom, traite_familial
+
+[D043] idrissa_traore  |  label=speculateur  |  alerte=SUSPICION_ELEVEE
+  NN=speculateur conf=1.00  |  Reventes fréquentes avec plus-values élevées
+  → HY-04: nn=speculateur ∧ speculation → suspicion_elevee
+  Règles: speculation
+
+[D044] jean_traore  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.52  |  Dossier conforme aux normes foncières
+
+[D045] pousga_ouali  |  label=standard  |  alerte=SIGNAL_NEURONAL
+  NN=speculateur conf=0.64  |  Dossier conforme aux normes foncières
+
+[D046] pafadnam_bassole  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.70  |  Dossier conforme aux normes foncières
+
+[D047] sandwidi_sidibe  |  label=conflit_interet  |  alerte=SUSPICION_ELEVEE
+  NN=atypique conf=1.00  |  Traitement partial de dossier administratif
+  → HY-05: nn=atypique ∧ prete_nom → suspicion_elevee
+  Règles: conflit_direct, prete_nom, traite_familial
+
+[D048] aminata_yabre  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.98  |  Dossier conforme aux normes foncières
+
+[D049] seydou_konfe  |  label=conflit_interet  |  alerte=SUSPICION_ELEVEE
+  NN=atypique conf=0.99  |  Traitement partial de dossier administratif
+  → HY-05: nn=atypique ∧ prete_nom → suspicion_elevee
+  Règles: conflit_direct, prete_nom
+
+[D050] noufou_zerbo  |  label=standard  |  alerte=SIGNAL_NEURONAL
+  NN=speculateur conf=0.95  |  Dossier conforme aux normes foncières
+
+[D051] aissata_traore  |  label=fraude_sophistiquee  |  alerte=FRAUDE_CONFIRMEE
+  NN=speculateur conf=1.00  |  Fraude complexe multi-composantes
+  → HY-04: nn=speculateur ∧ speculation → suspicion_elevee
+  → HY-08: nn∈{spec,fraud} ∧ accaparement ∧ prete_nom → fraude_confirmee
+  Règles: accaparement_urbain, conflit_direct, prete_nom, speculation, lien_familial_suspect, traite_familial
+
+[D052] zida_dambre  |  label=standard  |  alerte=SIGNAL_NEURONAL
+  NN=speculateur conf=0.61  |  Dossier conforme aux normes foncières
+
+[D053] pascal_ouedraogo  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.98  |  Dossier conforme aux normes foncières
+
+[D054] emmanuel_zongo  |  label=accaparement  |  alerte=SIGNAL_NEURONAL
+  NN=speculateur conf=1.00  |  Concentration excessive de parcelles
+  Règles: accaparement_urbain, lien_familial_suspect
+
+[D055] raphael_ouedraogo  |  label=conflit_interet  |  alerte=STANDARD
+  NN=standard conf=0.92  |  Traitement partial de dossier administratif
+  Règles: conflit_direct
+
+[D056] yago_kere  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.95  |  Dossier conforme aux normes foncières
+
+[D057] pafadnam_ganame  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.87  |  Dossier conforme aux normes foncières
+
+[D058] compaoré_kabore  |  label=standard  |  alerte=ATYPIQUE
+  NN=atypique conf=0.59  |  Dossier conforme aux normes foncières
+
+[D059] lankoande_dama  |  label=speculateur  |  alerte=SUSPICION_ELEVEE
+  NN=speculateur conf=1.00  |  Reventes fréquentes avec plus-values élevées
+  → HY-04: nn=speculateur ∧ speculation → suspicion_elevee
+  Règles: speculation
+
+[D060] belem_zerbo  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.93  |  Dossier conforme aux normes foncières
+
+[D061] moussa_zerbo  |  label=standard  |  alerte=ATYPIQUE
+  NN=atypique conf=0.72  |  Dossier conforme aux normes foncières
+
+[D062] zoungrana_diallo  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.90  |  Dossier conforme aux normes foncières
+
+[D063] lankoande_kabore  |  label=fraude_sophistiquee  |  alerte=FRAUDE_CONFIRMEE
+  NN=fraudeur_probable conf=0.53  |  Fraude complexe multi-composantes
+  → HY-01: nn=fraudeur ∧ accaparement_urbain → fraude_confirmee
+  → HY-02: nn=fraudeur ∧ conflit_direct → fraude_confirmee
+  → HY-03: nn=fraudeur ∧ blanchiment_circulaire → fraude_confirmee
+  → HY-08: nn∈{spec,fraud} ∧ accaparement ∧ prete_nom → fraude_confirmee
+  Règles: accaparement_urbain, conflit_direct, prete_nom, blanchiment_circulaire, speculation, lien_familial_suspect
+
+[D064] mamadou_zongo  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.91  |  Dossier conforme aux normes foncières
+
+[D065] moussa_dambre  |  label=accaparement  |  alerte=FRAUDE_CONFIRMEE
+  NN=speculateur conf=1.00  |  Concentration excessive de parcelles
+  → HY-08: nn∈{spec,fraud} ∧ accaparement ∧ prete_nom → fraude_confirmee
+  Règles: accaparement_urbain, prete_nom, lien_familial_suspect
+
+[D066] ilboudo_dambre  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.65  |  Dossier conforme aux normes foncières
+
+[D067] yago_zongo  |  label=speculateur  |  alerte=SUSPICION_ELEVEE
+  NN=speculateur conf=1.00  |  Reventes fréquentes avec plus-values élevées
+  → HY-04: nn=speculateur ∧ speculation → suspicion_elevee
+  Règles: speculation
+
+[D068] aissata_dama  |  label=standard  |  alerte=ATYPIQUE
+  NN=atypique conf=0.76  |  Dossier conforme aux normes foncières
+
+[D069] wendpanga_ouali  |  label=standard  |  alerte=SIGNAL_NEURONAL
+  NN=speculateur conf=0.69  |  Dossier conforme aux normes foncières
+
+[D070] pierre_ganame  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.70  |  Dossier conforme aux normes foncières
+
+[D071] sylvestre_bassole  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.93  |  Dossier conforme aux normes foncières
+
+[D072] daouda_ouedraogo  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.93  |  Dossier conforme aux normes foncières
+
+[D073] mamadou_zerbo  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.47  |  Dossier conforme aux normes foncières
+
+[D074] lankoande_kere  |  label=standard  |  alerte=SIGNAL_NEURONAL
+  NN=speculateur conf=0.40  |  Dossier conforme aux normes foncières
+
+[D075] sandwidi_diallo  |  label=speculateur  |  alerte=SUSPICION_ELEVEE
+  NN=speculateur conf=1.00  |  Reventes fréquentes avec plus-values élevées
+  → HY-04: nn=speculateur ∧ speculation → suspicion_elevee
+  Règles: speculation
+
+[D076] augustin_sidibe  |  label=fraude_sophistiquee  |  alerte=SUSPICION_ELEVEE
+  NN=speculateur conf=1.00  |  Fraude complexe multi-composantes
+  → HY-04: nn=speculateur ∧ speculation → suspicion_elevee
+  Règles: accaparement_urbain, speculation, lien_familial_suspect, iban_partage
+
+[D077] Georges_dambre  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.88  |  Dossier conforme aux normes foncières
+
+[D078] salam_bassole  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.53  |  Dossier conforme aux normes foncières
+
+[D079] raphael_konfe  |  label=accaparement  |  alerte=FRAUDE_CONFIRMEE
+  NN=speculateur conf=0.92  |  Concentration excessive de parcelles
+  → HY-08: nn∈{spec,fraud} ∧ accaparement ∧ prete_nom → fraude_confirmee
+  Règles: accaparement_urbain, prete_nom
+
+[D080] compaoré_zerbo  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.93  |  Dossier conforme aux normes foncières
+
+[D081] compaoré_kere  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.93  |  Dossier conforme aux normes foncières
+
+[D082] rouamba_sidibe  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.95  |  Dossier conforme aux normes foncières
+
+[D083] omar_konfe  |  label=conflit_interet  |  alerte=SUSPICION_ELEVEE
+  NN=atypique conf=1.00  |  Traitement partial de dossier administratif
+  → HY-05: nn=atypique ∧ prete_nom → suspicion_elevee
+  Règles: conflit_direct, prete_nom
+
+[D084] raogo_ouedraogo  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.71  |  Dossier conforme aux normes foncières
+
+[D085] baptiste_ouali  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.93  |  Dossier conforme aux normes foncières
+
+[D086] Georges_bassole  |  label=fraude_sophistiquee  |  alerte=FRAUDE_CONFIRMEE
+  NN=fraudeur_probable conf=1.00  |  Fraude complexe multi-composantes
+  → HY-01: nn=fraudeur ∧ accaparement_urbain → fraude_confirmee
+  → HY-02: nn=fraudeur ∧ conflit_direct → fraude_confirmee
+  → HY-03: nn=fraudeur ∧ blanchiment_circulaire → fraude_confirmee
+  → HY-08: nn∈{spec,fraud} ∧ accaparement ∧ prete_nom → fraude_confirmee
+  Règles: accaparement_urbain, conflit_direct, prete_nom, blanchiment_circulaire, speculation, lien_familial_suspect, iban_partage
+
+[D087] idrissa_sidibe  |  label=fraude_sophistiquee  |  alerte=FRAUDE_CONFIRMEE
+  NN=speculateur conf=1.00  |  Fraude complexe multi-composantes
+  → HY-04: nn=speculateur ∧ speculation → suspicion_elevee
+  → HY-08: nn∈{spec,fraud} ∧ accaparement ∧ prete_nom → fraude_confirmee
+  Règles: accaparement_urbain, conflit_direct, prete_nom, speculation, lien_familial_suspect, iban_partage
+
+[D088] aissata_sawadogo  |  label=standard  |  alerte=ATYPIQUE
+  NN=atypique conf=0.79  |  Dossier conforme aux normes foncières
+
+[D089] gabriel_kabore  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.98  |  Dossier conforme aux normes foncières
+
+[D090] hassan_konfe  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.95  |  Dossier conforme aux normes foncières
+
+[D091] therese_ouedraogo  |  label=fraude_sophistiquee  |  alerte=SUSPICION_ELEVEE
+  NN=speculateur conf=1.00  |  Fraude complexe multi-composantes
+  → HY-04: nn=speculateur ∧ speculation → suspicion_elevee
+  Règles: accaparement_urbain, speculation, lien_familial_suspect, iban_partage
+
+[D092] issouf_sidibe  |  label=speculateur  |  alerte=SUSPICION_ELEVEE
+  NN=speculateur conf=1.00  |  Reventes fréquentes avec plus-values élevées
+  → HY-04: nn=speculateur ∧ speculation → suspicion_elevee
+  Règles: speculation
+
+[D093] alphonse_dama  |  label=accaparement  |  alerte=FRAUDE_CONFIRMEE
+  NN=speculateur conf=1.00  |  Concentration excessive de parcelles
+  → HY-08: nn∈{spec,fraud} ∧ accaparement ∧ prete_nom → fraude_confirmee
+  Règles: accaparement_urbain, prete_nom, lien_familial_suspect
+
+[D094] souleymane_kabore  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.90  |  Dossier conforme aux normes foncières
+
+[D095] abdoul_dambre  |  label=standard  |  alerte=ATYPIQUE
+  NN=atypique conf=0.98  |  Dossier conforme aux normes foncières
+
+[D096] thomas_yabre  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.87  |  Dossier conforme aux normes foncières
+
+[D097] salam_traore  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.68  |  Dossier conforme aux normes foncières
+
+[D098] tiendrebeogo_kere  |  label=standard  |  alerte=SIGNAL_NEURONAL
+  NN=speculateur conf=0.88  |  Dossier conforme aux normes foncières
+
+[D099] abdoul_dama  |  label=conflit_interet  |  alerte=ATYPIQUE
+  NN=atypique conf=1.00  |  Traitement partial de dossier administratif
+  Règles: conflit_direct, traite_familial
+
+[D100] abdoul_zerbo  |  label=accaparement  |  alerte=SIGNAL_NEURONAL
+  NN=speculateur conf=1.00  |  Concentration excessive de parcelles
+  Règles: accaparement_urbain
+
+[D101] pafadnam_konfe  |  label=speculateur  |  alerte=SUSPICION_ELEVEE
+  NN=speculateur conf=1.00  |  Reventes fréquentes avec plus-values élevées
+  → HY-04: nn=speculateur ∧ speculation → suspicion_elevee
+  Règles: speculation
+
+[D102] cecile_sawadogo  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.98  |  Dossier conforme aux normes foncières
+
+[D103] hussein_diallo  |  label=conflit_interet  |  alerte=SUSPICION_ELEVEE
+  NN=atypique conf=1.00  |  Traitement partial de dossier administratif
+  → HY-05: nn=atypique ∧ prete_nom → suspicion_elevee
+  Règles: conflit_direct, prete_nom, traite_familial
+
+[D104] christophe_ganame  |  label=standard  |  alerte=SIGNAL_NEURONAL
+  NN=speculateur conf=0.63  |  Dossier conforme aux normes foncières
+
+[D105] felix_kabore  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.82  |  Dossier conforme aux normes foncières
+
+[D106] sandwidi_sawadogo  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.33  |  Dossier conforme aux normes foncières
+
+[D107] omar_yabre  |  label=conflit_interet  |  alerte=SUSPICION_ELEVEE
+  NN=atypique conf=0.99  |  Traitement partial de dossier administratif
+  → HY-05: nn=atypique ∧ prete_nom → suspicion_elevee
+  Règles: prete_nom, lien_familial_suspect, traite_familial
+
+[D108] mamadou_kabore  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.91  |  Dossier conforme aux normes foncières
+
+[D109] albert_bassole  |  label=standard  |  alerte=ATYPIQUE
+  NN=atypique conf=0.62  |  Dossier conforme aux normes foncières
+
+[D110] raogo_sawadogo  |  label=fraude_sophistiquee  |  alerte=FRAUDE_CONFIRMEE
+  NN=fraudeur_probable conf=0.98  |  Fraude complexe multi-composantes
+  → HY-01: nn=fraudeur ∧ accaparement_urbain → fraude_confirmee
+  → HY-02: nn=fraudeur ∧ conflit_direct → fraude_confirmee
+  → HY-03: nn=fraudeur ∧ blanchiment_circulaire → fraude_confirmee
+  → HY-08: nn∈{spec,fraud} ∧ accaparement ∧ prete_nom → fraude_confirmee
+  Règles: accaparement_urbain, conflit_direct, prete_nom, blanchiment_circulaire, speculation, lien_familial_suspect, traite_familial
+
+[D111] pierre_yabre  |  label=standard  |  alerte=SIGNAL_NEURONAL
+  NN=speculateur conf=0.59  |  Dossier conforme aux normes foncières
+
+[D112] felix_konfe  |  label=standard  |  alerte=ATYPIQUE
+  NN=atypique conf=0.56  |  Dossier conforme aux normes foncières
+
+[D113] soumaila_ouedraogo  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.96  |  Dossier conforme aux normes foncières
+
+[D114] norbert_ouali  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.67  |  Dossier conforme aux normes foncières
+
+[D115] joseph_dambre  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.92  |  Dossier conforme aux normes foncières
+
+[D116] benoit_bassole  |  label=conflit_interet  |  alerte=SUSPICION_ELEVEE
+  NN=atypique conf=1.00  |  Traitement partial de dossier administratif
+  → HY-05: nn=atypique ∧ prete_nom → suspicion_elevee
+  Règles: conflit_direct, prete_nom
+
+[D117] oumar_dama  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.78  |  Dossier conforme aux normes foncières
+
+[D118] salam_dama  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.87  |  Dossier conforme aux normes foncières
+
+[D119] saidou_yabre  |  label=conflit_interet  |  alerte=SUSPICION_ELEVEE
+  NN=atypique conf=1.00  |  Traitement partial de dossier administratif
+  → HY-05: nn=atypique ∧ prete_nom → suspicion_elevee
+  Règles: conflit_direct, prete_nom
+
+[D120] bernadette_sawadogo  |  label=standard  |  alerte=ATYPIQUE
+  NN=atypique conf=0.68  |  Dossier conforme aux normes foncières
+
+[D121] pierre_bassole  |  label=fraude_sophistiquee  |  alerte=FRAUDE_CONFIRMEE
+  NN=speculateur conf=1.00  |  Fraude complexe multi-composantes
+  → HY-04: nn=speculateur ∧ speculation → suspicion_elevee
+  → HY-08: nn∈{spec,fraud} ∧ accaparement ∧ prete_nom → fraude_confirmee
+  Règles: accaparement_urbain, conflit_direct, prete_nom, speculation, lien_familial_suspect, traite_familial, iban_partage
+
+[D122] augustin_konfe  |  label=accaparement  |  alerte=FRAUDE_CONFIRMEE
+  NN=speculateur conf=0.99  |  Concentration excessive de parcelles
+  → HY-08: nn∈{spec,fraud} ∧ accaparement ∧ prete_nom → fraude_confirmee
+  Règles: accaparement_urbain, prete_nom, lien_familial_suspect
+
+[D123] raphael_bassole  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.54  |  Dossier conforme aux normes foncières
+
+[D124] christophe_ouali  |  label=speculateur  |  alerte=SUSPICION_ELEVEE
+  NN=speculateur conf=1.00  |  Reventes fréquentes avec plus-values élevées
+  → HY-04: nn=speculateur ∧ speculation → suspicion_elevee
+  Règles: speculation
+
+[D125] salimata_ouali  |  label=standard  |  alerte=ATYPIQUE
+  NN=atypique conf=0.69  |  Dossier conforme aux normes foncières
+
+[D126] pingrenoma_konfe  |  label=accaparement  |  alerte=SIGNAL_NEURONAL
+  NN=speculateur conf=1.00  |  Concentration excessive de parcelles
+  Règles: accaparement_urbain
+
+[D127] rouamba_zongo  |  label=fraude_sophistiquee  |  alerte=FRAUDE_CONFIRMEE
+  NN=fraudeur_probable conf=1.00  |  Fraude complexe multi-composantes
+  → HY-01: nn=fraudeur ∧ accaparement_urbain → fraude_confirmee
+  → HY-08: nn∈{spec,fraud} ∧ accaparement ∧ prete_nom → fraude_confirmee
+  Règles: accaparement_urbain, prete_nom, lien_familial_suspect, iban_partage
+
+[D128] christophe_zerbo  |  label=accaparement  |  alerte=SIGNAL_NEURONAL
+  NN=speculateur conf=1.00  |  Concentration excessive de parcelles
+  Règles: accaparement_urbain
+
+[D129] luc_konfe  |  label=fraude_sophistiquee  |  alerte=SUSPICION_ELEVEE
+  NN=speculateur conf=1.00  |  Fraude complexe multi-composantes
+  → HY-04: nn=speculateur ∧ speculation → suspicion_elevee
+  Règles: accaparement_urbain, speculation, lien_familial_suspect, traite_familial, iban_partage
+
+[D130] yameogo_dambre  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.86  |  Dossier conforme aux normes foncières
+
+[D131] anne_yabre  |  label=fraude_sophistiquee  |  alerte=FRAUDE_CONFIRMEE
+  NN=fraudeur_probable conf=1.00  |  Fraude complexe multi-composantes
+  → HY-01: nn=fraudeur ∧ accaparement_urbain → fraude_confirmee
+  → HY-02: nn=fraudeur ∧ conflit_direct → fraude_confirmee
+  → HY-03: nn=fraudeur ∧ blanchiment_circulaire → fraude_confirmee
+  → HY-08: nn∈{spec,fraud} ∧ accaparement ∧ prete_nom → fraude_confirmee
+  Règles: accaparement_urbain, conflit_direct, prete_nom, blanchiment_circulaire, speculation, lien_familial_suspect, iban_partage
+
+[D132] ibrahim_bassole  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.62  |  Dossier conforme aux normes foncières
+
+[D133] francois_zerbo  |  label=speculateur  |  alerte=SUSPICION_ELEVEE
+  NN=speculateur conf=1.00  |  Reventes fréquentes avec plus-values élevées
+  → HY-04: nn=speculateur ∧ speculation → suspicion_elevee
+  Règles: speculation
+
+[D134] norbert_sidibe  |  label=fraude_sophistiquee  |  alerte=FRAUDE_CONFIRMEE
+  NN=fraudeur_probable conf=0.99  |  Fraude complexe multi-composantes
+  → HY-01: nn=fraudeur ∧ accaparement_urbain → fraude_confirmee
+  → HY-02: nn=fraudeur ∧ conflit_direct → fraude_confirmee
+  → HY-03: nn=fraudeur ∧ blanchiment_circulaire → fraude_confirmee
+  → HY-08: nn∈{spec,fraud} ∧ accaparement ∧ prete_nom → fraude_confirmee
+  Règles: accaparement_urbain, conflit_direct, prete_nom, blanchiment_circulaire, speculation, lien_familial_suspect, traite_familial
+
+[D135] norbert_bassole  |  label=conflit_interet  |  alerte=SUSPICION_ELEVEE
+  NN=atypique conf=0.99  |  Traitement partial de dossier administratif
+  → HY-05: nn=atypique ∧ prete_nom → suspicion_elevee
+  Règles: prete_nom, traite_familial
+
+[D136] mariam_sidibe  |  label=standard  |  alerte=ATYPIQUE
+  NN=atypique conf=0.89  |  Dossier conforme aux normes foncières
+
+[D137] thomas_ganame  |  label=standard  |  alerte=SIGNAL_NEURONAL
+  NN=speculateur conf=0.59  |  Dossier conforme aux normes foncières
+
+[D138] rouamba_konfe  |  label=fraude_sophistiquee  |  alerte=FRAUDE_CONFIRMEE
+  NN=fraudeur_probable conf=0.67  |  Fraude complexe multi-composantes
+  → HY-01: nn=fraudeur ∧ accaparement_urbain → fraude_confirmee
+  → HY-03: nn=fraudeur ∧ blanchiment_circulaire → fraude_confirmee
+  → HY-08: nn∈{spec,fraud} ∧ accaparement ∧ prete_nom → fraude_confirmee
+  Règles: accaparement_urbain, prete_nom, blanchiment_circulaire, lien_familial_suspect, traite_familial, iban_partage
+
+[D139] moussa_yabre  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.48  |  Dossier conforme aux normes foncières
+
+[D140] salimata_diallo  |  label=standard  |  alerte=ATYPIQUE
+  NN=atypique conf=0.70  |  Dossier conforme aux normes foncières
+
+[D141] bernadette_dambre  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.87  |  Dossier conforme aux normes foncières
+
+[D142] Georges_ganame  |  label=conflit_interet  |  alerte=ATYPIQUE
+  NN=atypique conf=0.95  |  Traitement partial de dossier administratif
+  Règles: conflit_direct, traite_familial
+
+[D143] saidou_dambre  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.93  |  Dossier conforme aux normes foncières
+
+[D144] fatoumata_traore  |  label=conflit_interet  |  alerte=ATYPIQUE
+  NN=atypique conf=0.49  |  Traitement partial de dossier administratif
+  Règles: conflit_direct, lien_familial_suspect, traite_familial
+
+[D145] oumar_ouali  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.98  |  Dossier conforme aux normes foncières
+
+[D146] luc_ouedraogo  |  label=standard  |  alerte=SIGNAL_NEURONAL
+  NN=speculateur conf=0.42  |  Dossier conforme aux normes foncières
+
+[D147] nikiema_bassole  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.95  |  Dossier conforme aux normes foncières
+
+[D148] hassan_dama  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.92  |  Dossier conforme aux normes foncières
+
+[D149] maimouna_ouali  |  label=speculateur  |  alerte=SUSPICION_ELEVEE
+  NN=speculateur conf=1.00  |  Reventes fréquentes avec plus-values élevées
+  → HY-04: nn=speculateur ∧ speculation → suspicion_elevee
+  Règles: speculation
+
+[D150] christophe_sawadogo  |  label=standard  |  alerte=SIGNAL_NEURONAL
+  NN=speculateur conf=0.56  |  Dossier conforme aux normes foncières
+
+[D151] maimouna_kere  |  label=speculateur  |  alerte=SUSPICION_ELEVEE
+  NN=speculateur conf=1.00  |  Reventes fréquentes avec plus-values élevées
+  → HY-04: nn=speculateur ∧ speculation → suspicion_elevee
+  Règles: speculation
+
+[D152] maimouna_yabre  |  label=conflit_interet  |  alerte=STANDARD
+  NN=standard conf=0.90  |  Traitement partial de dossier administratif
+  Règles: lien_familial_suspect, traite_familial
+
+[D153] raogo_kabore  |  label=standard  |  alerte=ATYPIQUE
+  NN=atypique conf=0.48  |  Dossier conforme aux normes foncières
+
+[D154] tarpaga_kabore  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.94  |  Dossier conforme aux normes foncières
+
+[D155] wendyam_sidibe  |  label=accaparement  |  alerte=SIGNAL_NEURONAL
+  NN=speculateur conf=1.00  |  Concentration excessive de parcelles
+  Règles: accaparement_urbain
+
+[D156] boukary_traore  |  label=accaparement  |  alerte=FRAUDE_CONFIRMEE
+  NN=speculateur conf=1.00  |  Concentration excessive de parcelles
+  → HY-08: nn∈{spec,fraud} ∧ accaparement ∧ prete_nom → fraude_confirmee
+  Règles: accaparement_urbain, prete_nom
+
+[D157] boukary_diallo  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.65  |  Dossier conforme aux normes foncières
+
+[D158] bila_zongo  |  label=conflit_interet  |  alerte=SUSPICION_ELEVEE
+  NN=atypique conf=0.99  |  Traitement partial de dossier administratif
+  → HY-05: nn=atypique ∧ prete_nom → suspicion_elevee
+  Règles: conflit_direct, prete_nom
+
+[D159] abdoul_kere  |  label=accaparement  |  alerte=SIGNAL_NEURONAL
+  NN=speculateur conf=1.00  |  Concentration excessive de parcelles
+  Règles: accaparement_urbain
+
+[D160] daouda_dambre  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.95  |  Dossier conforme aux normes foncières
+
+[D161] fatoumata_kere  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.89  |  Dossier conforme aux normes foncières
+
+[D162] sandwidi_dambre  |  label=accaparement  |  alerte=FRAUDE_CONFIRMEE
+  NN=speculateur conf=1.00  |  Concentration excessive de parcelles
+  → HY-08: nn∈{spec,fraud} ∧ accaparement ∧ prete_nom → fraude_confirmee
+  Règles: accaparement_urbain, prete_nom, lien_familial_suspect
+
+[D163] joel_kabore  |  label=standard  |  alerte=SIGNAL_NEURONAL
+  NN=speculateur conf=0.61  |  Dossier conforme aux normes foncières
+
+[D164] therese_yabre  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.55  |  Dossier conforme aux normes foncières
+
+[D165] ibrahim_dambre  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.82  |  Dossier conforme aux normes foncières
+
+[D166] aissata_diallo  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.56  |  Dossier conforme aux normes foncières
+
+[D167] hamidou_sidibe  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.79  |  Dossier conforme aux normes foncières
+
+[D168] zoungrana_zongo  |  label=fraude_sophistiquee  |  alerte=FRAUDE_CONFIRMEE
+  NN=speculateur conf=1.00  |  Fraude complexe multi-composantes
+  → HY-04: nn=speculateur ∧ speculation → suspicion_elevee
+  → HY-08: nn∈{spec,fraud} ∧ accaparement ∧ prete_nom → fraude_confirmee
+  Règles: accaparement_urbain, conflit_direct, prete_nom, speculation, lien_familial_suspect, traite_familial, iban_partage
+
+[D169] ali_zerbo  |  label=conflit_interet  |  alerte=STANDARD
+  NN=standard conf=0.69  |  Traitement partial de dossier administratif
+  Règles: conflit_direct, traite_familial
+
+[D170] compaoré_sawadogo  |  label=accaparement  |  alerte=SIGNAL_NEURONAL
+  NN=speculateur conf=1.00  |  Concentration excessive de parcelles
+  Règles: accaparement_urbain
+
+[D171] pafadnam_ouali  |  label=speculateur  |  alerte=SUSPICION_ELEVEE
+  NN=speculateur conf=1.00  |  Reventes fréquentes avec plus-values élevées
+  → HY-04: nn=speculateur ∧ speculation → suspicion_elevee
+  Règles: speculation
+
+[D172] joseph_bassole  |  label=speculateur  |  alerte=SUSPICION_ELEVEE
+  NN=speculateur conf=1.00  |  Reventes fréquentes avec plus-values élevées
+  → HY-04: nn=speculateur ∧ speculation → suspicion_elevee
+  Règles: speculation
+
+[D173] salam_sawadogo  |  label=fraude_sophistiquee  |  alerte=FRAUDE_CONFIRMEE
+  NN=speculateur conf=0.98  |  Fraude complexe multi-composantes
+  → HY-04: nn=speculateur ∧ speculation → suspicion_elevee
+  → HY-08: nn∈{spec,fraud} ∧ accaparement ∧ prete_nom → fraude_confirmee
+  Règles: accaparement_urbain, prete_nom, blanchiment_circulaire, speculation, lien_familial_suspect, traite_familial, iban_partage
+
+[D174] tarpaga_sidibe  |  label=speculateur  |  alerte=SUSPICION_ELEVEE
+  NN=speculateur conf=1.00  |  Reventes fréquentes avec plus-values élevées
+  → HY-04: nn=speculateur ∧ speculation → suspicion_elevee
+  Règles: speculation
+
+[D175] pascal_konfe  |  label=standard  |  alerte=ATYPIQUE
+  NN=atypique conf=0.93  |  Dossier conforme aux normes foncières
+
+[D176] emmanuel_bassole  |  label=accaparement  |  alerte=SIGNAL_NEURONAL
+  NN=speculateur conf=1.00  |  Concentration excessive de parcelles
+  Règles: accaparement_urbain, lien_familial_suspect
+
+[D177] benoit_zongo  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.98  |  Dossier conforme aux normes foncières
+
+[D178] augustin_diallo  |  label=accaparement  |  alerte=SIGNAL_NEURONAL
+  NN=speculateur conf=1.00  |  Concentration excessive de parcelles
+  Règles: accaparement_urbain
+
+[D179] aissata_yabre  |  label=standard  |  alerte=ATYPIQUE
+  NN=atypique conf=0.97  |  Dossier conforme aux normes foncières
+
+[D180] pousga_ganame  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.95  |  Dossier conforme aux normes foncières
+
+[D181] wendyam_yabre  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.99  |  Dossier conforme aux normes foncières
+
+[D182] kadiatou_ouedraogo  |  label=accaparement  |  alerte=FRAUDE_CONFIRMEE
+  NN=speculateur conf=0.95  |  Concentration excessive de parcelles
+  → HY-08: nn∈{spec,fraud} ∧ accaparement ∧ prete_nom → fraude_confirmee
+  Règles: accaparement_urbain, prete_nom
+
+[D183] cheikh_konfe  |  label=standard  |  alerte=ATYPIQUE
+  NN=atypique conf=0.55  |  Dossier conforme aux normes foncières
+
+[D184] augustin_kere  |  label=fraude_sophistiquee  |  alerte=FRAUDE_CONFIRMEE
+  NN=speculateur conf=1.00  |  Fraude complexe multi-composantes
+  → HY-04: nn=speculateur ∧ speculation → suspicion_elevee
+  → HY-08: nn∈{spec,fraud} ∧ accaparement ∧ prete_nom → fraude_confirmee
+  Règles: accaparement_urbain, prete_nom, blanchiment_circulaire, speculation, lien_familial_suspect
+
+[D185] nikiema_ouali  |  label=speculateur  |  alerte=SUSPICION_ELEVEE
+  NN=speculateur conf=1.00  |  Reventes fréquentes avec plus-values élevées
+  → HY-04: nn=speculateur ∧ speculation → suspicion_elevee
+  Règles: speculation
+
+[D186] bila_dambre  |  label=accaparement  |  alerte=FRAUDE_CONFIRMEE
+  NN=speculateur conf=1.00  |  Concentration excessive de parcelles
+  → HY-08: nn∈{spec,fraud} ∧ accaparement ∧ prete_nom → fraude_confirmee
+  Règles: accaparement_urbain, prete_nom
+
+[D187] pierre_konfe  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.57  |  Dossier conforme aux normes foncières
+
+[D188] albert_ganame  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.46  |  Dossier conforme aux normes foncières
+
+[D189] pascal_yabre  |  label=speculateur  |  alerte=SUSPICION_ELEVEE
+  NN=speculateur conf=1.00  |  Reventes fréquentes avec plus-values élevées
+  → HY-04: nn=speculateur ∧ speculation → suspicion_elevee
+  Règles: speculation
+
+[D190] ouoba_kere  |  label=speculateur  |  alerte=SUSPICION_ELEVEE
+  NN=speculateur conf=1.00  |  Reventes fréquentes avec plus-values élevées
+  → HY-04: nn=speculateur ∧ speculation → suspicion_elevee
+  Règles: speculation
+
+[D191] rouamba_ganame  |  label=standard  |  alerte=ATYPIQUE
+  NN=atypique conf=0.50  |  Dossier conforme aux normes foncières
+
+[D192] albert_kere  |  label=fraude_sophistiquee  |  alerte=FRAUDE_CONFIRMEE
+  NN=speculateur conf=1.00  |  Fraude complexe multi-composantes
+  → HY-08: nn∈{spec,fraud} ∧ accaparement ∧ prete_nom → fraude_confirmee
+  Règles: accaparement_urbain, prete_nom, blanchiment_circulaire, lien_familial_suspect, traite_familial, iban_partage
+
+[D193] albert_ouali  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.94  |  Dossier conforme aux normes foncières
+
+[D194] luc_sidibe  |  label=standard  |  alerte=STANDARD
+  NN=standard conf=0.96  |  Dossier conforme aux normes foncières
+
+[D195] cheikh_ganame  |  label=standard  |  alerte=SIGNAL_NEURONAL
+  NN=speculateur conf=0.58  |  Dossier conforme aux normes foncières
+
+[D196] alassane_ouedraogo  |  label=standard  |  alerte=ATYPIQUE
+  NN=atypique conf=0.74  |  Dossier conforme aux normes foncières
+
+[D197] jean_sidibe  |  label=speculateur  |  alerte=SUSPICION_ELEVEE
+  NN=speculateur conf=1.00  |  Reventes fréquentes avec plus-values élevées
+  → HY-04: nn=speculateur ∧ speculation → suspicion_elevee
+  Règles: speculation
+
+[D198] alassane_sawadogo  |  label=standard  |  alerte=ATYPIQUE
+  NN=atypique conf=0.47  |  Dossier conforme aux normes foncières
+
+[D199] ilboudo_ganame  |  label=speculateur  |  alerte=SUSPICION_ELEVEE
+  NN=speculateur conf=1.00  |  Reventes fréquentes avec plus-values élevées
+  → HY-04: nn=speculateur ∧ speculation → suspicion_elevee
+  Règles: speculation
+
+[D200] zoungrana_kere  |  label=accaparement  |  alerte=SIGNAL_NEURONAL
+  NN=speculateur conf=1.00  |  Concentration excessive de parcelles
+  Règles: accaparement_urbain
+
+======================================================================
+  SYNTHESE FINALE
+======================================================================
+  FRAUDE_CONFIRMEE      : 23
+  SUSPICION_ELEVEE      : 37
+  SIGNAL_NEURONAL       : 31
+  ATYPIQUE              : 26
+  STANDARD              : 83
+
+  Precision : 98.0% (196/200)

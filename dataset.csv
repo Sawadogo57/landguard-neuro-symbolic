@@ -1,0 +1,201 @@
+id,nom,type_acteur,nb_parcelles_urbaines,nb_parcelles_rurales,freq_revente,ratio_plus_value,nb_liens_reseau,partage_telephone,partage_adresse,partage_iban,age_premier_achat,lien_familial_suspect,traite_dossier_propre,traite_dossier_familial,circuit_revente,label,description
+D001,moussa_ouali,citoyen,1,2,0.37,1.61,1,0,0,0,19,0,0,0,0,standard,Dossier conforme aux normes foncières
+D002,hassan_bassole,citoyen,3,1,0.29,1.22,2,0,0,0,19,0,0,0,0,standard,Dossier conforme aux normes foncières
+D003,joseph_sidibe,citoyen,2,0,0.18,1.24,1,0,0,0,11,0,0,0,0,standard,Dossier conforme aux normes foncières
+D004,hamidou_dama,citoyen,0,1,0.38,1.45,0,0,0,0,18,0,0,0,0,standard,Dossier conforme aux normes foncières
+D005,sandwidi_kabore,citoyen,0,0,0.38,1.14,0,0,0,0,7,0,0,0,0,standard,Dossier conforme aux normes foncières
+D006,mamadou_dama,citoyen,0,0,0.29,1.57,2,0,0,0,7,0,0,0,0,standard,Dossier conforme aux normes foncières
+D007,bonkoungou_dama,citoyen,0,0,0.28,1.04,0,0,0,0,4,0,0,0,0,standard,Dossier conforme aux normes foncières
+D008,tinga_ganame,citoyen,1,1,0.18,1.5,0,0,0,0,11,0,0,0,0,standard,Dossier conforme aux normes foncières
+D009,sandwidi_yabre,citoyen,2,0,0.4,1.31,1,0,0,0,5,0,0,0,0,standard,Dossier conforme aux normes foncières
+D010,tiendrebeogo_sidibe,citoyen,1,1,0.37,1.69,2,0,0,0,3,0,0,0,0,standard,Dossier conforme aux normes foncières
+D011,pierre_sidibe,notaire,7,0,2.38,2.32,8,1,1,0,2,1,0,1,1,fraude_sophistiquee,Fraude complexe multi-composantes
+D012,jean_zongo,citoyen,1,1,0.01,1.52,1,0,0,0,16,0,0,0,0,standard,Dossier conforme aux normes foncières
+D013,emmanuel_traore,citoyen,1,1,2.91,3.98,1,0,0,0,1,0,0,0,0,speculateur,Reventes fréquentes avec plus-values élevées
+D014,aminata_sidibe,citoyen,2,1,0.25,1.26,1,0,0,0,14,0,0,0,0,standard,Dossier conforme aux normes foncières
+D015,lankoande_diallo,citoyen,6,0,1.19,1.56,5,0,1,0,1,1,0,0,0,accaparement,Concentration excessive de parcelles
+D016,tiendrebeogo_dama,citoyen,2,0,0.31,1.08,0,0,0,0,18,0,0,0,0,standard,Dossier conforme aux normes foncières
+D017,felix_zerbo,citoyen,0,0,0.06,1.27,0,0,0,0,9,0,0,0,0,standard,Dossier conforme aux normes foncières
+D018,felix_bassole,notaire,1,0,0.0,1.13,2,1,0,0,13,0,1,1,0,conflit_interet,Traitement partial de dossier administratif
+D019,hussein_sidibe,notaire,6,2,1.03,3.58,7,0,0,1,1,1,0,1,1,fraude_sophistiquee,Fraude complexe multi-composantes
+D020,wendpanga_konfe,citoyen,3,1,0.13,1.07,0,0,0,0,13,0,0,0,0,standard,Dossier conforme aux normes foncières
+D021,pingdwendé_ouedraogo,citoyen,4,0,2.9,3.54,7,0,1,0,2,1,1,1,1,fraude_sophistiquee,Fraude complexe multi-composantes
+D022,baptiste_zongo,citoyen,1,0,3.47,4.19,2,0,0,0,3,0,0,0,0,speculateur,Reventes fréquentes avec plus-values élevées
+D023,aminata_dama,citoyen,8,1,0.89,1.75,5,0,1,0,1,1,0,0,0,accaparement,Concentration excessive de parcelles
+D024,salimata_yabre,citoyen,3,1,0.13,1.53,1,0,0,0,17,0,0,0,0,standard,Dossier conforme aux normes foncières
+D025,yago_kabore,citoyen,3,0,0.01,1.15,2,0,0,0,3,0,0,0,0,standard,Dossier conforme aux normes foncières
+D026,idrissa_ouedraogo,citoyen,1,1,0.24,1.58,1,0,0,0,17,0,0,0,0,standard,Dossier conforme aux normes foncières
+D027,joel_diallo,citoyen,1,2,0.28,1.35,0,0,0,0,7,0,0,0,0,standard,Dossier conforme aux normes foncières
+D028,raphael_zongo,citoyen,3,1,0.1,1.17,2,0,0,0,11,0,0,0,0,standard,Dossier conforme aux normes foncières
+D029,lankoande_sawadogo,agent_public,0,0,0.0,1.13,2,1,0,0,8,0,1,0,0,conflit_interet,Traitement partial de dossier administratif
+D030,ibrahim_kere,citoyen,0,0,0.11,1.62,2,0,0,0,20,0,0,0,0,standard,Dossier conforme aux normes foncières
+D031,abdoul_sawadogo,citoyen,0,0,0.07,1.34,0,0,0,0,15,0,0,0,0,standard,Dossier conforme aux normes foncières
+D032,noufou_dambre,citoyen,3,0,0.18,1.19,0,0,0,0,8,0,0,0,0,standard,Dossier conforme aux normes foncières
+D033,souleymane_traore,citoyen,1,1,0.27,1.27,2,0,0,0,8,0,0,0,0,standard,Dossier conforme aux normes foncières
+D034,daouda_sidibe,citoyen,3,2,0.08,1.41,2,0,0,0,10,0,0,0,0,standard,Dossier conforme aux normes foncières
+D035,tarpaga_bassole,citoyen,2,2,0.12,1.29,1,0,0,0,12,0,0,0,0,standard,Dossier conforme aux normes foncières
+D036,pascal_zerbo,agent_public,1,0,0.0,1.39,1,0,0,0,9,1,1,0,0,conflit_interet,Traitement partial de dossier administratif
+D037,hawa_ganame,citoyen,1,1,0.21,1.42,0,0,0,0,20,0,0,0,0,standard,Dossier conforme aux normes foncières
+D038,boukary_zerbo,citoyen,0,1,0.33,1.07,1,0,0,0,17,0,0,0,0,standard,Dossier conforme aux normes foncières
+D039,salam_ouali,citoyen,3,2,0.16,1.15,0,0,0,0,19,0,0,0,0,standard,Dossier conforme aux normes foncières
+D040,yameogo_zerbo,notaire,0,0,0.0,1.22,4,1,1,0,8,0,1,0,0,conflit_interet,Traitement partial de dossier administratif
+D041,ali_dambre,citoyen,3,1,0.11,1.05,1,0,0,0,14,0,0,0,0,standard,Dossier conforme aux normes foncières
+D042,moussa_konfe,agent_public,1,0,0.0,1.09,1,1,0,0,12,0,1,1,0,conflit_interet,Traitement partial de dossier administratif
+D043,idrissa_traore,citoyen,1,1,3.92,4.01,2,0,0,0,1,0,0,0,0,speculateur,Reventes fréquentes avec plus-values élevées
+D044,jean_traore,citoyen,3,2,0.05,1.66,1,0,0,0,11,0,0,0,0,standard,Dossier conforme aux normes foncières
+D045,pousga_ouali,citoyen,0,1,0.29,1.59,2,0,0,0,18,0,0,0,0,standard,Dossier conforme aux normes foncières
+D046,pafadnam_bassole,citoyen,0,2,0.11,1.16,2,0,0,0,6,0,0,0,0,standard,Dossier conforme aux normes foncières
+D047,sandwidi_sidibe,agent_public,0,0,0.0,1.15,4,1,0,0,14,0,1,1,0,conflit_interet,Traitement partial de dossier administratif
+D048,aminata_yabre,citoyen,0,2,0.06,1.61,0,0,0,0,5,0,0,0,0,standard,Dossier conforme aux normes foncières
+D049,seydou_konfe,notaire,1,0,0.0,1.38,4,1,0,0,7,0,1,0,0,conflit_interet,Traitement partial de dossier administratif
+D050,noufou_zerbo,citoyen,3,2,0.33,1.62,1,0,0,0,20,0,0,0,0,standard,Dossier conforme aux normes foncières
+D051,aissata_traore,citoyen,7,0,2.8,2.89,5,1,1,0,3,1,1,1,0,fraude_sophistiquee,Fraude complexe multi-composantes
+D052,zida_dambre,citoyen,2,1,0.4,1.45,1,0,0,0,19,0,0,0,0,standard,Dossier conforme aux normes foncières
+D053,pascal_ouedraogo,citoyen,0,0,0.25,1.19,0,0,0,0,8,0,0,0,0,standard,Dossier conforme aux normes foncières
+D054,emmanuel_zongo,citoyen,5,3,1.03,1.58,4,0,1,0,1,1,0,0,0,accaparement,Concentration excessive de parcelles
+D055,raphael_ouedraogo,agent_public,1,0,0.0,1.42,1,0,1,0,11,0,1,0,0,conflit_interet,Traitement partial de dossier administratif
+D056,yago_kere,citoyen,1,0,0.06,1.03,1,0,0,0,5,0,0,0,0,standard,Dossier conforme aux normes foncières
+D057,pafadnam_ganame,citoyen,0,0,0.23,1.33,1,0,0,0,13,0,0,0,0,standard,Dossier conforme aux normes foncières
+D058,compaoré_kabore,citoyen,3,1,0.24,1.33,1,0,0,0,20,0,0,0,0,standard,Dossier conforme aux normes foncières
+D059,lankoande_dama,citoyen,3,0,3.09,3.16,3,0,0,0,2,0,0,0,0,speculateur,Reventes fréquentes avec plus-values élevées
+D060,belem_zerbo,citoyen,3,1,0.18,1.15,1,0,0,0,8,0,0,0,0,standard,Dossier conforme aux normes foncières
+D061,moussa_zerbo,citoyen,1,2,0.39,1.11,1,0,0,0,20,0,0,0,0,standard,Dossier conforme aux normes foncières
+D062,zoungrana_diallo,citoyen,2,1,0.06,1.67,1,0,0,0,6,0,0,0,0,standard,Dossier conforme aux normes foncières
+D063,lankoande_kabore,citoyen,6,1,3.0,3.44,9,1,1,0,1,1,1,0,1,fraude_sophistiquee,Fraude complexe multi-composantes
+D064,mamadou_zongo,citoyen,3,0,0.39,1.19,1,0,0,0,12,0,0,0,0,standard,Dossier conforme aux normes foncières
+D065,moussa_dambre,citoyen,6,1,1.27,2.22,4,1,0,0,1,1,0,0,0,accaparement,Concentration excessive de parcelles
+D066,ilboudo_dambre,citoyen,1,1,0.31,1.38,2,0,0,0,3,0,0,0,0,standard,Dossier conforme aux normes foncières
+D067,yago_zongo,citoyen,1,1,3.86,4.47,2,0,0,0,3,0,0,0,0,speculateur,Reventes fréquentes avec plus-values élevées
+D068,aissata_dama,citoyen,0,2,0.03,1.46,2,0,0,0,19,0,0,0,0,standard,Dossier conforme aux normes foncières
+D069,wendpanga_ouali,citoyen,2,2,0.28,1.45,1,0,0,0,20,0,0,0,0,standard,Dossier conforme aux normes foncières
+D070,pierre_ganame,citoyen,3,0,0.04,1.46,1,0,0,0,16,0,0,0,0,standard,Dossier conforme aux normes foncières
+D071,sylvestre_bassole,citoyen,1,0,0.08,1.31,1,0,0,0,8,0,0,0,0,standard,Dossier conforme aux normes foncières
+D072,daouda_ouedraogo,citoyen,1,0,0.32,1.66,0,0,0,0,10,0,0,0,0,standard,Dossier conforme aux normes foncières
+D073,mamadou_zerbo,citoyen,0,0,0.23,1.35,2,0,0,0,8,0,0,0,0,standard,Dossier conforme aux normes foncières
+D074,lankoande_kere,citoyen,3,2,0.33,1.21,0,0,0,0,16,0,0,0,0,standard,Dossier conforme aux normes foncières
+D075,sandwidi_diallo,citoyen,1,0,1.61,2.09,2,0,0,0,1,0,0,0,0,speculateur,Reventes fréquentes avec plus-values élevées
+D076,augustin_sidibe,promoteur,6,2,2.12,2.64,8,0,1,1,1,1,0,0,0,fraude_sophistiquee,Fraude complexe multi-composantes
+D077,Georges_dambre,citoyen,1,2,0.15,1.6,1,0,0,0,4,0,0,0,0,standard,Dossier conforme aux normes foncières
+D078,salam_bassole,citoyen,3,0,0.22,1.58,2,0,0,0,14,0,0,0,0,standard,Dossier conforme aux normes foncières
+D079,raphael_konfe,citoyen,8,0,0.95,1.57,2,1,1,0,1,0,0,0,0,accaparement,Concentration excessive de parcelles
+D080,compaoré_zerbo,citoyen,3,0,0.04,1.25,1,0,0,0,10,0,0,0,0,standard,Dossier conforme aux normes foncières
+D081,compaoré_kere,citoyen,0,0,0.12,1.25,1,0,0,0,3,0,0,0,0,standard,Dossier conforme aux normes foncières
+D082,rouamba_sidibe,citoyen,2,0,0.05,1.68,0,0,0,0,11,0,0,0,0,standard,Dossier conforme aux normes foncières
+D083,omar_konfe,notaire,0,0,0.0,1.48,3,1,0,0,7,0,1,0,0,conflit_interet,Traitement partial de dossier administratif
+D084,raogo_ouedraogo,citoyen,1,2,0.39,1.23,0,0,0,0,17,0,0,0,0,standard,Dossier conforme aux normes foncières
+D085,baptiste_ouali,citoyen,0,1,0.01,1.38,1,0,0,0,10,0,0,0,0,standard,Dossier conforme aux normes foncières
+D086,Georges_bassole,citoyen,6,2,1.59,2.89,10,1,0,1,2,1,1,0,1,fraude_sophistiquee,Fraude complexe multi-composantes
+D087,idrissa_sidibe,agent_public,6,2,2.36,2.24,5,1,1,1,3,1,1,0,0,fraude_sophistiquee,Fraude complexe multi-composantes
+D088,aissata_sawadogo,citoyen,1,2,0.06,1.39,2,0,0,0,16,0,0,0,0,standard,Dossier conforme aux normes foncières
+D089,gabriel_kabore,citoyen,0,1,0.29,1.42,0,0,0,0,5,0,0,0,0,standard,Dossier conforme aux normes foncières
+D090,hassan_konfe,citoyen,1,1,0.05,1.22,0,0,0,0,14,0,0,0,0,standard,Dossier conforme aux normes foncières
+D091,therese_ouedraogo,citoyen,7,1,2.03,3.5,6,0,0,1,1,1,0,0,0,fraude_sophistiquee,Fraude complexe multi-composantes
+D092,issouf_sidibe,citoyen,3,0,2.74,3.46,1,0,0,0,2,0,0,0,0,speculateur,Reventes fréquentes avec plus-values élevées
+D093,alphonse_dama,citoyen,8,2,0.52,1.62,3,1,0,0,1,1,0,0,0,accaparement,Concentration excessive de parcelles
+D094,souleymane_kabore,citoyen,1,0,0.16,1.48,1,0,0,0,12,0,0,0,0,standard,Dossier conforme aux normes foncières
+D095,abdoul_dambre,citoyen,2,2,0.05,1.2,2,0,0,0,18,0,0,0,0,standard,Dossier conforme aux normes foncières
+D096,thomas_yabre,citoyen,0,2,0.26,1.45,0,0,0,0,15,0,0,0,0,standard,Dossier conforme aux normes foncières
+D097,salam_traore,citoyen,2,0,0.39,1.39,2,0,0,0,7,0,0,0,0,standard,Dossier conforme aux normes foncières
+D098,tiendrebeogo_kere,citoyen,3,1,0.37,1.66,0,0,0,0,17,0,0,0,0,standard,Dossier conforme aux normes foncières
+D099,abdoul_dama,notaire,1,0,0.0,1.03,4,0,0,0,15,0,1,1,0,conflit_interet,Traitement partial de dossier administratif
+D100,abdoul_zerbo,citoyen,5,1,1.29,1.55,3,0,0,0,3,0,0,0,0,accaparement,Concentration excessive de parcelles
+D101,pafadnam_konfe,citoyen,1,0,2.68,3.55,3,0,0,0,2,0,0,0,0,speculateur,Reventes fréquentes avec plus-values élevées
+D102,cecile_sawadogo,citoyen,0,2,0.17,1.61,0,0,0,0,4,0,0,0,0,standard,Dossier conforme aux normes foncières
+D103,hussein_diallo,notaire,0,0,0.0,1.48,3,1,0,0,12,0,1,1,0,conflit_interet,Traitement partial de dossier administratif
+D104,christophe_ganame,citoyen,1,0,0.12,1.68,2,0,0,0,20,0,0,0,0,standard,Dossier conforme aux normes foncières
+D105,felix_kabore,citoyen,1,1,0.27,1.15,0,0,0,0,18,0,0,0,0,standard,Dossier conforme aux normes foncières
+D106,sandwidi_sawadogo,citoyen,0,1,0.09,1.56,2,0,0,0,19,0,0,0,0,standard,Dossier conforme aux normes foncières
+D107,omar_yabre,agent_public,1,0,0.0,1.29,4,1,1,0,5,1,0,1,0,conflit_interet,Traitement partial de dossier administratif
+D108,mamadou_kabore,citoyen,1,0,0.24,1.47,0,0,0,0,15,0,0,0,0,standard,Dossier conforme aux normes foncières
+D109,albert_bassole,citoyen,1,0,0.09,1.34,2,0,0,0,19,0,0,0,0,standard,Dossier conforme aux normes foncières
+D110,raogo_sawadogo,citoyen,7,2,1.91,2.48,9,1,0,0,2,1,1,1,1,fraude_sophistiquee,Fraude complexe multi-composantes
+D111,pierre_yabre,citoyen,3,1,0.01,1.6,0,0,0,0,18,0,0,0,0,standard,Dossier conforme aux normes foncières
+D112,felix_konfe,citoyen,3,1,0.12,1.16,2,0,0,0,9,0,0,0,0,standard,Dossier conforme aux normes foncières
+D113,soumaila_ouedraogo,citoyen,2,1,0.05,1.05,1,0,0,0,5,0,0,0,0,standard,Dossier conforme aux normes foncières
+D114,norbert_ouali,citoyen,3,1,0.39,1.17,2,0,0,0,7,0,0,0,0,standard,Dossier conforme aux normes foncières
+D115,joseph_dambre,citoyen,3,0,0.22,1.45,1,0,0,0,7,0,0,0,0,standard,Dossier conforme aux normes foncières
+D116,benoit_bassole,agent_public,1,0,0.0,1.04,2,1,1,0,12,0,1,0,0,conflit_interet,Traitement partial de dossier administratif
+D117,oumar_dama,citoyen,0,1,0.31,1.62,1,0,0,0,7,0,0,0,0,standard,Dossier conforme aux normes foncières
+D118,salam_dama,citoyen,3,0,0.11,1.34,1,0,0,0,13,0,0,0,0,standard,Dossier conforme aux normes foncières
+D119,saidou_yabre,notaire,0,0,0.0,1.21,4,1,0,0,10,0,1,0,0,conflit_interet,Traitement partial de dossier administratif
+D120,bernadette_sawadogo,citoyen,3,1,0.0,1.25,1,0,0,0,16,0,0,0,0,standard,Dossier conforme aux normes foncières
+D121,pierre_bassole,citoyen,5,1,2.04,3.83,5,1,1,1,1,1,1,1,0,fraude_sophistiquee,Fraude complexe multi-composantes
+D122,augustin_konfe,citoyen,4,2,1.07,2.27,2,1,0,0,2,1,0,0,0,accaparement,Concentration excessive de parcelles
+D123,raphael_bassole,citoyen,1,0,0.03,1.01,2,0,0,0,10,0,0,0,0,standard,Dossier conforme aux normes foncières
+D124,christophe_ouali,citoyen,2,1,2.0,2.96,2,0,0,0,1,0,0,0,0,speculateur,Reventes fréquentes avec plus-values élevées
+D125,salimata_ouali,citoyen,2,2,0.08,1.24,2,0,0,0,11,0,0,0,0,standard,Dossier conforme aux normes foncières
+D126,pingrenoma_konfe,citoyen,4,3,0.78,2.46,5,0,0,0,5,0,0,0,0,accaparement,Concentration excessive de parcelles
+D127,rouamba_zongo,agent_public,7,2,1.36,2.27,10,1,0,1,1,1,0,0,0,fraude_sophistiquee,Fraude complexe multi-composantes
+D128,christophe_zerbo,citoyen,6,2,1.45,2.12,5,0,0,0,1,0,0,0,0,accaparement,Concentration excessive de parcelles
+D129,luc_konfe,promoteur,5,0,1.87,3.82,5,0,0,1,1,1,0,1,0,fraude_sophistiquee,Fraude complexe multi-composantes
+D130,yameogo_dambre,citoyen,2,1,0.03,1.46,1,0,0,0,13,0,0,0,0,standard,Dossier conforme aux normes foncières
+D131,anne_yabre,agent_public,6,0,1.99,3.0,9,1,0,1,1,1,1,0,1,fraude_sophistiquee,Fraude complexe multi-composantes
+D132,ibrahim_bassole,citoyen,2,2,0.14,1.21,0,0,0,0,17,0,0,0,0,standard,Dossier conforme aux normes foncières
+D133,francois_zerbo,citoyen,3,1,3.68,2.09,1,0,0,0,1,0,0,0,0,speculateur,Reventes fréquentes avec plus-values élevées
+D134,norbert_sidibe,agent_public,5,0,2.63,3.87,10,1,0,0,2,1,1,1,1,fraude_sophistiquee,Fraude complexe multi-composantes
+D135,norbert_bassole,agent_public,1,0,0.0,1.44,2,1,0,0,6,0,0,1,0,conflit_interet,Traitement partial de dossier administratif
+D136,mariam_sidibe,citoyen,1,1,0.02,1.31,2,0,0,0,20,0,0,0,0,standard,Dossier conforme aux normes foncières
+D137,thomas_ganame,citoyen,2,2,0.38,1.57,2,0,0,0,4,0,0,0,0,standard,Dossier conforme aux normes foncières
+D138,rouamba_konfe,notaire,7,2,1.06,2.31,8,1,1,1,1,1,0,1,1,fraude_sophistiquee,Fraude complexe multi-composantes
+D139,moussa_yabre,citoyen,3,0,0.08,1.25,1,0,0,0,17,0,0,0,0,standard,Dossier conforme aux normes foncières
+D140,salimata_diallo,citoyen,1,2,0.21,1.46,2,0,0,0,20,0,0,0,0,standard,Dossier conforme aux normes foncières
+D141,bernadette_dambre,citoyen,1,0,0.11,1.55,1,0,0,0,13,0,0,0,0,standard,Dossier conforme aux normes foncières
+D142,Georges_ganame,agent_public,0,0,0.0,1.23,3,0,0,0,4,0,1,1,0,conflit_interet,Traitement partial de dossier administratif
+D143,saidou_dambre,citoyen,3,1,0.12,1.56,0,0,0,0,10,0,0,0,0,standard,Dossier conforme aux normes foncières
+D144,fatoumata_traore,notaire,0,0,0.0,1.09,2,0,0,0,14,1,1,1,0,conflit_interet,Traitement partial de dossier administratif
+D145,oumar_ouali,citoyen,0,2,0.25,1.37,0,0,0,0,8,0,0,0,0,standard,Dossier conforme aux normes foncières
+D146,luc_ouedraogo,citoyen,1,0,0.18,1.56,2,0,0,0,19,0,0,0,0,standard,Dossier conforme aux normes foncières
+D147,nikiema_bassole,citoyen,0,2,0.09,1.19,1,0,0,0,5,0,0,0,0,standard,Dossier conforme aux normes foncières
+D148,hassan_dama,citoyen,2,2,0.11,1.6,0,0,0,0,10,0,0,0,0,standard,Dossier conforme aux normes foncières
+D149,maimouna_ouali,citoyen,2,1,3.37,2.85,1,0,0,0,2,0,0,0,0,speculateur,Reventes fréquentes avec plus-values élevées
+D150,christophe_sawadogo,citoyen,0,0,0.38,1.48,0,0,0,0,20,0,0,0,0,standard,Dossier conforme aux normes foncières
+D151,maimouna_kere,citoyen,1,0,2.31,2.14,2,0,0,0,2,0,0,0,0,speculateur,Reventes fréquentes avec plus-values élevées
+D152,maimouna_yabre,notaire,0,0,0.0,1.22,1,0,1,0,13,1,0,1,0,conflit_interet,Traitement partial de dossier administratif
+D153,raogo_kabore,citoyen,0,0,0.06,1.11,2,0,0,0,16,0,0,0,0,standard,Dossier conforme aux normes foncières
+D154,tarpaga_kabore,citoyen,2,2,0.27,1.43,0,0,0,0,10,0,0,0,0,standard,Dossier conforme aux normes foncières
+D155,wendyam_sidibe,citoyen,7,0,0.99,2.39,2,0,1,0,5,0,0,0,0,accaparement,Concentration excessive de parcelles
+D156,boukary_traore,citoyen,6,2,0.88,2.02,4,1,1,0,1,0,0,0,0,accaparement,Concentration excessive de parcelles
+D157,boukary_diallo,citoyen,3,1,0.22,1.29,0,0,0,0,16,0,0,0,0,standard,Dossier conforme aux normes foncières
+D158,bila_zongo,notaire,1,0,0.0,1.46,4,1,1,0,14,0,1,0,0,conflit_interet,Traitement partial de dossier administratif
+D159,abdoul_kere,citoyen,8,2,0.85,1.99,3,0,1,0,2,0,0,0,0,accaparement,Concentration excessive de parcelles
+D160,daouda_dambre,citoyen,0,0,0.26,1.54,0,0,0,0,10,0,0,0,0,standard,Dossier conforme aux normes foncières
+D161,fatoumata_kere,citoyen,0,2,0.31,1.24,1,0,0,0,14,0,0,0,0,standard,Dossier conforme aux normes foncières
+D162,sandwidi_dambre,citoyen,7,3,1.39,1.8,5,1,1,0,1,1,0,0,0,accaparement,Concentration excessive de parcelles
+D163,joel_kabore,citoyen,2,1,0.13,1.68,1,0,0,0,19,0,0,0,0,standard,Dossier conforme aux normes foncières
+D164,therese_yabre,citoyen,1,0,0.18,1.6,2,0,0,0,6,0,0,0,0,standard,Dossier conforme aux normes foncières
+D165,ibrahim_dambre,citoyen,0,0,0.29,1.34,0,0,0,0,18,0,0,0,0,standard,Dossier conforme aux normes foncières
+D166,aissata_diallo,citoyen,1,2,0.15,1.64,1,0,0,0,16,0,0,0,0,standard,Dossier conforme aux normes foncières
+D167,hamidou_sidibe,citoyen,0,1,0.34,1.42,0,0,0,0,17,0,0,0,0,standard,Dossier conforme aux normes foncières
+D168,zoungrana_zongo,notaire,5,0,2.97,3.58,6,1,0,1,3,1,1,1,0,fraude_sophistiquee,Fraude complexe multi-composantes
+D169,ali_zerbo,agent_public,1,0,0.0,1.4,2,0,1,0,11,0,1,1,0,conflit_interet,Traitement partial de dossier administratif
+D170,compaoré_sawadogo,citoyen,6,1,1.49,1.95,3,0,0,0,2,0,0,0,0,accaparement,Concentration excessive de parcelles
+D171,pafadnam_ouali,citoyen,2,1,3.17,4.25,2,0,0,0,2,0,0,0,0,speculateur,Reventes fréquentes avec plus-values élevées
+D172,joseph_bassole,citoyen,2,1,3.18,3.68,3,0,0,0,2,0,0,0,0,speculateur,Reventes fréquentes avec plus-values élevées
+D173,salam_sawadogo,citoyen,7,0,2.76,3.46,8,1,0,1,1,1,0,1,1,fraude_sophistiquee,Fraude complexe multi-composantes
+D174,tarpaga_sidibe,citoyen,2,0,2.91,3.71,3,0,0,0,1,0,0,0,0,speculateur,Reventes fréquentes avec plus-values élevées
+D175,pascal_konfe,citoyen,3,2,0.21,1.3,2,0,0,0,20,0,0,0,0,standard,Dossier conforme aux normes foncières
+D176,emmanuel_bassole,citoyen,6,1,1.06,2.0,4,0,1,0,3,1,0,0,0,accaparement,Concentration excessive de parcelles
+D177,benoit_zongo,citoyen,0,0,0.39,1.08,0,0,0,0,12,0,0,0,0,standard,Dossier conforme aux normes foncières
+D178,augustin_diallo,citoyen,4,2,1.18,2.01,4,0,0,0,4,0,0,0,0,accaparement,Concentration excessive de parcelles
+D179,aissata_yabre,citoyen,2,2,0.16,1.19,2,0,0,0,18,0,0,0,0,standard,Dossier conforme aux normes foncières
+D180,pousga_ganame,citoyen,2,0,0.04,1.3,1,0,0,0,4,0,0,0,0,standard,Dossier conforme aux normes foncières
+D181,wendyam_yabre,citoyen,3,2,0.24,1.23,0,0,0,0,5,0,0,0,0,standard,Dossier conforme aux normes foncières
+D182,kadiatou_ouedraogo,citoyen,4,2,0.94,1.81,5,1,1,0,2,0,0,0,0,accaparement,Concentration excessive de parcelles
+D183,cheikh_konfe,citoyen,2,1,0.11,1.42,1,0,0,0,20,0,0,0,0,standard,Dossier conforme aux normes foncières
+D184,augustin_kere,citoyen,6,0,2.27,3.1,6,1,0,0,3,1,0,0,1,fraude_sophistiquee,Fraude complexe multi-composantes
+D185,nikiema_ouali,citoyen,3,0,3.07,4.26,3,0,0,0,1,0,0,0,0,speculateur,Reventes fréquentes avec plus-values élevées
+D186,bila_dambre,citoyen,7,3,0.95,1.49,4,1,0,0,1,0,0,0,0,accaparement,Concentration excessive de parcelles
+D187,pierre_konfe,citoyen,2,0,0.18,1.38,1,0,0,0,19,0,0,0,0,standard,Dossier conforme aux normes foncières
+D188,albert_ganame,citoyen,3,1,0.4,1.55,2,0,0,0,7,0,0,0,0,standard,Dossier conforme aux normes foncières
+D189,pascal_yabre,citoyen,1,1,3.33,2.23,2,0,0,0,2,0,0,0,0,speculateur,Reventes fréquentes avec plus-values élevées
+D190,ouoba_kere,citoyen,1,0,2.58,2.25,3,0,0,0,3,0,0,0,0,speculateur,Reventes fréquentes avec plus-values élevées
+D191,rouamba_ganame,citoyen,3,0,0.04,1.16,2,0,0,0,10,0,0,0,0,standard,Dossier conforme aux normes foncières
+D192,albert_kere,agent_public,7,1,1.07,3.29,7,1,0,1,2,1,0,1,1,fraude_sophistiquee,Fraude complexe multi-composantes
+D193,albert_ouali,citoyen,1,2,0.29,1.17,1,0,0,0,7,0,0,0,0,standard,Dossier conforme aux normes foncières
+D194,luc_sidibe,citoyen,2,2,0.28,1.15,1,0,0,0,4,0,0,0,0,standard,Dossier conforme aux normes foncières
+D195,cheikh_ganame,citoyen,3,2,0.18,1.19,0,0,0,0,20,0,0,0,0,standard,Dossier conforme aux normes foncières
+D196,alassane_ouedraogo,citoyen,2,1,0.11,1.15,2,0,0,0,13,0,0,0,0,standard,Dossier conforme aux normes foncières
+D197,jean_sidibe,citoyen,3,1,2.94,4.48,2,0,0,0,1,0,0,0,0,speculateur,Reventes fréquentes avec plus-values élevées
+D198,alassane_sawadogo,citoyen,2,2,0.02,1.53,1,0,0,0,19,0,0,0,0,standard,Dossier conforme aux normes foncières
+D199,ilboudo_ganame,citoyen,2,0,3.02,2.88,3,0,0,0,1,0,0,0,0,speculateur,Reventes fréquentes avec plus-values élevées
+D200,zoungrana_kere,citoyen,6,2,0.51,2.34,5,0,0,0,1,0,0,0,0,accaparement,Concentration excessive de parcelles

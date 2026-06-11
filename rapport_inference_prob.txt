@@ -1,0 +1,25 @@
+=================================================================
+  LANDGUARD — RAPPORT D'INFÉRENCE PROBABILISTE
+  Généré le : 11/06/2026 20:26:45
+=================================================================
+
+  accapareur(abdou)                             P=0.9000  [CRITIQUE]
+  blanchiment(abdou)                            P=0.8500  [CRITIQUE]
+  conflit_interet(konate)                       P=0.9500  [CRITIQUE]
+  conflit_interet(maitre_diallo)                P=0.7500  [ELEVE]
+  fraude_composite(abdou)                       P=0.6732  [ELEVE]
+  fraude_composite(fatima)                      P=0.8531  [CRITIQUE]
+  fraude_composite(konate)                      P=0.0000  [FAIBLE]
+  prete_nom(abdou,fatima)                       P=0.9744  [CRITIQUE]
+  prete_nom(abdou,salif)                        P=0.9995  [CRITIQUE]
+  prete_nom(maitre_diallo,immo_sarl)            P=0.7500  [ELEVE]
+  speculateur(fatima)                           P=0.9300  [CRITIQUE]
+  speculateur(moussa)                           P=0.4500  [MOYEN]
+
+ÉCHELLE DE RISQUE :
+  FAIBLE   : P < 0.30
+  MOYEN    : 0.30 ≤ P < 0.60
+  ÉLEVÉ    : 0.60 ≤ P < 0.80
+  CRITIQUE : P ≥ 0.80
+
+=================================================================
