@@ -1,0 +1,914 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.6.8)  14 JUN 2026 10:20
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./rapport.tex
+(rapport.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-12-24>
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
+Document Class: report 2025/01/22 v1.4n Standard LaTeX document class
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/latex/base\size11.clo
+File: size11.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count275
+\c@chapter=\count276
+\c@section=\count277
+\c@subsection=\count278
+\c@subsubsection=\count279
+\c@paragraph=\count280
+\c@subparagraph=\count281
+\c@figure=\count282
+\c@table=\count283
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen148
+)
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+)
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
+)
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2026/03/07 v6.0 Page Geometry
+
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks19
+)
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+))
+\Gm@cnth=\count284
+\Gm@cntv=\count285
+\c@Gm@tempcnt=\count286
+\Gm@bindingoffset=\dimen149
+\Gm@wd@mp=\dimen150
+\Gm@odd@mp=\dimen151
+\Gm@even@mp=\dimen152
+\Gm@layoutwidth=\dimen153
+\Gm@layoutheight=\dimen154
+\Gm@layouthoffset=\dimen155
+\Gm@layoutvoffset=\dimen156
+\Gm@dimlist=\toks20
+
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2025/07/09 v2.17z AMS math features
+\@mathmargin=\skip51
+
+For additional information on amsmath, use the `?' option.
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2024/11/17 v2.01 AMS text
+
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks21
+\ex@=\dimen157
+))
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen158
+)
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count287
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count288
+\leftroot@=\count289
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count290
+\DOTSCASE@=\count291
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box53
+\strutbox@=\box54
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen159
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count292
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count293
+\dotsspace@=\muskip17
+\c@parentequation=\count294
+\dspbrk@lvl=\count295
+\tag@help=\toks22
+\row@=\count296
+\column@=\count297
+\maxfields@=\count298
+\andhelp@=\toks23
+\eqnshift@=\dimen160
+\alignsep@=\dimen161
+\tagshift@=\dimen162
+\tagwidth@=\dimen163
+\totwidth@=\dimen164
+\lineht@=\dimen165
+\@envbody=\toks24
+\multlinegap=\skip52
+\multlinetaggap=\skip53
+\mathdisplay@stack=\toks25
+LaTeX Info: Redefining \[ on input line 2950.
+LaTeX Info: Redefining \] on input line 2951.
+)
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
+)
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+) (C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen166
+\lightrulewidth=\dimen167
+\cmidrulewidth=\dimen168
+\belowrulesep=\dimen169
+\belowbottomsep=\dimen170
+\aboverulesep=\dimen171
+\abovetopsep=\dimen172
+\cmidrulesep=\dimen173
+\cmidrulekern=\dimen174
+\defaultaddspace=\dimen175
+\@cmidla=\count299
+\@cmidlb=\count300
+\@aboverulesep=\dimen176
+\@belowrulesep=\dimen177
+\@thisruleclass=\count301
+\@lastruleclass=\count302
+\@thisrulewidth=\dimen178
+) (C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty
+Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
+\LTleft=\skip54
+\LTright=\skip55
+\LTpre=\skip56
+\LTpost=\skip57
+\LTchunksize=\count303
+\LTcapwidth=\dimen179
+\LT@head=\box55
+\LT@firsthead=\box56
+\LT@foot=\box57
+\LT@lastfoot=\box58
+\LT@gbox=\box59
+\LT@cols=\count304
+\LT@rows=\count305
+\c@LT@tables=\count306
+\c@LT@chunks=\count307
+\LT@p@ftn=\toks26
+)
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
+\col@sep=\dimen180
+\ar@mcellbox=\box60
+\extrarowheight=\dimen181
+\NC@list=\toks27
+\extratabsurround=\skip58
+\backup@length=\skip59
+\ar@cellbox=\box61
+)
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colortbl.sty
+Package: colortbl 2026/05/01 v1.0l Color table columns (DPC)
+\everycr=\toks28
+\minrowclearance=\skip60
+\rownum=\count308
+)
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+\lst@mode=\count309
+\lst@gtempboxa=\box62
+\lst@token=\toks29
+\lst@length=\count310
+\lst@currlwidth=\dimen182
+\lst@column=\count311
+\lst@pos=\count312
+\lst@lostspace=\dimen183
+\lst@width=\dimen184
+\lst@newlines=\count313
+\lst@lineno=\count314
+\lst@maxwidth=\dimen185
+
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch.sty
+File: lstpatch.sty 2025/11/14 1.11b (Carsten Heinz)
+)
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
+\c@lstnumber=\count315
+\lst@skipnumbers=\count316
+\lst@framebox=\box63
+)
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+File: listings.cfg 2025/11/14 1.11b listings configuration
+))
+Package: listings 2025/11/14 1.11b (Carsten Heinz)
+==> First Aid for listings.sty no longer applied!
+    Expected:
+        2024/09/23 1.10c (Carsten Heinz)
+    but found:
+        2025/11/14 1.11b (Carsten Heinz)
+    so I'm assuming it got fixed.
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
+Package: enumitem 2025/02/06 v3.11 Customized lists
+\labelindent=\skip61
+\enit@outerparindent=\dimen186
+\enit@toks=\toks30
+\enit@inbox=\box64
+\enit@count@id=\count317
+\enitdp@description=\count318
+)
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+Package: hyperref 2025-07-12 v7.01o Hypertext links for LaTeX
+
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
+keys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.s
+ty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
+.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
+ty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+))
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+Package: nameref 2025-06-21 v2.57 Cross-referencing by name of section
+
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettit
+lestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count319
+)
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count320
+)
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.s
+ty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\@linkdim=\dimen187
+\Hy@linkcounter=\count321
+\Hy@pagecounter=\count322
+ (C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+) (C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count323
+ (C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4195.
+Package hyperref Info: Link nesting OFF on input line 4200.
+Package hyperref Info: Hyper index ON on input line 4203.
+Package hyperref Info: Plain pages OFF on input line 4210.
+Package hyperref Info: Backreferencing OFF on input line 4215.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4462.
+\c@Hy@tempcnt=\count324
+
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip18
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4801.
+\XeTeXLinkMargin=\dimen188
+
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc
+.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count325
+\Field@Width=\dimen189
+\Fld@charsize=\dimen190
+Package hyperref Info: Hyper figures OFF on input line 6078.
+Package hyperref Info: Link nesting OFF on input line 6083.
+Package hyperref Info: Hyper index ON on input line 6086.
+Package hyperref Info: backreferencing OFF on input line 6093.
+Package hyperref Info: Link coloring OFF on input line 6098.
+Package hyperref Info: Link coloring with OCG OFF on input line 6103.
+Package hyperref Info: PDF/A mode OFF on input line 6108.
+\Hy@abspage=\count326
+\c@Item=\count327
+\c@Hfootnote=\count328
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+File: hpdftex.def 2025-07-12 v7.01o Hyperref driver for pdfTeX
+\Fld@listcount=\count329
+\c@bookmark@seq@number=\count330
+
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
+echeck.sty
+Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
+
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquec
+ounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+84.
+)
+\Hy@SectionHShift=\skip62
+)
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip63
+\f@nch@offset@elh=\skip64
+\f@nch@offset@erh=\skip65
+\f@nch@offset@olh=\skip66
+\f@nch@offset@orh=\skip67
+\f@nch@offset@elf=\skip68
+\f@nch@offset@erf=\skip69
+\f@nch@offset@olf=\skip70
+\f@nch@offset@orf=\skip71
+\f@nch@height=\skip72
+\f@nch@footalignment=\skip73
+\f@nch@widthL=\skip74
+\f@nch@widthC=\skip75
+\f@nch@widthR=\skip76
+\@temptokenb=\toks31
+)
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
+Package: titlesec 2025/01/04 v2.17 Sectioning titles
+\ttl@box=\box65
+\beforetitleunit=\skip77
+\aftertitleunit=\skip78
+\ttl@plus=\dimen191
+\ttl@minus=\dimen192
+\ttl@toksa=\toks32
+\titlewidth=\dimen193
+\titlewidthlast=\dimen194
+\titlewidthfirst=\dimen195
+)
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+)
+\Gin@req@height=\dimen196
+\Gin@req@width=\dimen197
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 72.
+
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
+tex.def
+File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count331
+) (rapport.aux)
+\openout1 = `rapport.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 81.
+LaTeX Font Info:    ... okay on input line 81.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=702.78308pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-38.1381pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=50.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+ii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count332
+\scratchdimen=\dimen198
+\scratchbox=\box66
+\nofMPsegments=\count333
+\nofMParguments=\count334
+\everyMPshowfont=\toks33
+\MPscratchCnt=\count335
+\MPscratchDim=\dimen199
+\MPnumerator=\count336
+\makeMPintoPDFobject=\count337
+\everyMPtoPDFconversion=\toks34
+)
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+fg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+\c@lstlisting=\count338
+Package hyperref Info: Link coloring ON on input line 81.
+ (rapport.out) (rapport.out)
+\@outlinefile=\write3
+\openout3 = `rapport.out'.
+
+<ujkz.jpg, id=127, 248.93pt x 251.94125pt>
+File: ujkz.jpg Graphic file (type jpg)
+<use ujkz.jpg>
+Package pdftex.def Info: ujkz.jpg  used on input line 93.
+(pdftex.def)             Requested size: 70.28107pt x 71.13188pt.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 94.
+
+
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 94.
+
+
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+<ufrsea.png, id=128, 246.98868pt x 180.27791pt>
+File: ufrsea.png Graphic file (type png)
+<use ufrsea.png>
+Package pdftex.def Info: ufrsea.png  used on input line 98.
+(pdftex.def)             Requested size: 97.45581pt x 71.13188pt.
+
+[1
+
+{C:/Users/sawad/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./ujkz.jpg> 
+<./ufrsea.png>] (rapport.toc)
+\tf@toc=\write4
+\openout4 = `rapport.toc'.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.134 \clearpage
+                 [1
+
+] [2
+
+
+]
+Underfull \hbox (badness 6893) in paragraph at lines 186--186
+[]|\T1/cmr/bx/n/10.95 Base de con-nais-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
+[]|\T1/cmr/bx/n/10.95 Raisonnement
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 189--190
+[]|\T1/cmr/m/n/10.95 Classification com-porte-men-tale (4
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 190--190
+[]|\T1/cmr/bx/n/10.95 Couche neuro-
+ []
+
+
+Underfull \hbox (badness 1527) in paragraph at lines 191--192
+[]|\T1/cmr/m/n/10.95 Extraction et tra-duc-tion des traces
+ []
+
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2025/11/14 1.11b listings language file
+)
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 207.
+
+[3
+
+]
+Underfull \hbox (badness 6691) in paragraph at lines 226--227
+[]|\T1/cmr/m/n/10.95 Oui (4 types ex-
+ []
+
+ignored error: Infinite glue shrinkage found in box being split [4
+
+] [5]
+Overfull \hbox (0.69382pt too wide) in paragraph at lines 306--306
+[]|[]\T1/cmr/bx/n/10.95 Cat.[]| 
+ []
+
+
+Underfull \hbox (badness 1354) in paragraph at lines 315--315
+[]|\T1/cmr/m/n/10.95 Spéculateur foncier (vendu + $\OMS/cmsy/m/n/10.95 ^^U \OT1
+/cmr/m/n/10.95 3$
+ []
+
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2025/11/14 1.11b listings language file
+)
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang2.sty
+File: lstlang2.sty 2025/11/14 1.11b listings language file
+)
+[6
+
+] [7]
+Underfull \hbox (badness 10000) in paragraph at lines 385--385
+[]|\T1/cmr/m/n/10.95 accaparement $\OT1/cmr/m/n/10.95 +$ \T1/cmr/m/n/10.95 blan
+chi-ment $\OMS/cmsy/m/n/10.95 )$
+ []
+
+[8
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 449--449
+[]|\T1/cmr/m/n/10.95 Ratio valeur_revente /
+ []
+
+
+Overfull \hbox (10.80518pt too wide) in paragraph at lines 472--472
+[]|\T1/cmr/m/n/10.95 nn=fraudeur_probable| 
+ []
+
+
+Overfull \hbox (10.80518pt too wide) in paragraph at lines 473--473
+[]|\T1/cmr/m/n/10.95 nn=fraudeur_probable| 
+ []
+
+
+Overfull \hbox (10.80518pt too wide) in paragraph at lines 474--474
+[]|\T1/cmr/m/n/10.95 nn=fraudeur_probable| 
+ []
+
+
+Overfull \hbox (3.94763pt too wide) in paragraph at lines 475--475
+[]|\T1/cmr/m/n/10.95 speculation_symbolique(X)| 
+ []
+
+
+Overfull \hbox (3.57742pt too wide) in paragraph at lines 476--476
+[]|\T1/cmr/m/n/10.95 prete_nom_symbolique(X)| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 477--477
+[]|\T1/cmr/m/n/10.95 fraude(X) et
+ []
+
+[9
+
+]
+Overfull \hbox (4.46855pt too wide) in paragraph at lines 490--490
+[]|\T1/cmr/m/n/10.95 fraudeur_probable| 
+ []
+
+
+Overfull \hbox (38.28783pt too wide) in paragraph at lines 490--490
+[]|[]\T1/cmr/m/n/10.95 FRAUDE_CONFIRMEE[]| 
+ []
+
+
+Overfull \hbox (27.7127pt too wide) in paragraph at lines 491--491
+[]|[]\T1/cmr/m/n/10.95 SUSPICION_ELEVEE[]| 
+ []
+
+
+Overfull \hbox (27.7127pt too wide) in paragraph at lines 492--492
+[]|[]\T1/cmr/m/n/10.95 SUSPICION_ELEVEE[]| 
+ []
+
+
+Overfull \hbox (2.42694pt too wide) in paragraph at lines 494--494
+[]|\T1/cmtt/m/n/10.95 maitre_diallo| 
+ []
+
+
+Overfull \hbox (27.78073pt too wide) in paragraph at lines 495--495
+[]|\T1/cmr/m/n/10.95 SIGNAL_NEURONAL| 
+ []
+
+[10]
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 508.
+
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2025/11/14 1.11b listings language file
+)
+(C:\Users\sawad\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2025/11/14 1.11b listings language file
+)
+[11
+
+]
+Overfull \hbox (27.98671pt too wide) in paragraph at lines 580--580
+[]|\T1/cmr/bx/n/10.95 FRAUDE_CONFIRMEE| 
+ []
+
+
+Overfull \hbox (15.31744pt too wide) in paragraph at lines 581--581
+[]|\T1/cmr/bx/n/10.95 SUSPICION_ELEVEE| 
+ []
+
+
+Overfull \hbox (16.8259pt too wide) in paragraph at lines 582--582
+[]|\T1/cmr/bx/n/10.95 SIGNAL_NEURONAL| 
+ []
+
+
+Underfull \hbox (badness 5161) in paragraph at lines 582--583
+[]|\T1/cmr/m/n/10.95 Signal NN sans con-fir-ma-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 583--584
+[]|\T1/cmr/m/n/10.95 Comportement atyp-ique sans
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 615--615
+[]|\T1/cmr/bx/n/10.95 ML seul (Py-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 617--617
+[]|\T1/cmr/bx/n/10.95 LandGuard (hy-
+ []
+
+
+Overfull \hbox (14.47581pt too wide) in paragraph at lines 610--620
+ [] 
+ []
+
+[12
+
+]
+<screenshots/partie1.png, id=283, 825.0825pt x 827.34094pt>
+File: screenshots/partie1.png Graphic file (type png)
+<use screenshots/partie1.png>
+Package pdftex.def Info: screenshots/partie1.png  used on input line 634.
+(pdftex.def)             Requested size: 432.48051pt x 433.66617pt.
+<screenshots/partie2.png, id=284, 974.89218pt x 768.62157pt>
+File: screenshots/partie2.png Graphic file (type png)
+<use screenshots/partie2.png>
+Package pdftex.def Info: screenshots/partie2.png  used on input line 644.
+(pdftex.def)             Requested size: 432.48051pt x 340.97412pt.
+ [13
+
+ <./screenshots/partie1.png>]
+<screenshots/partie21.png, id=292, 1440.13031pt x 813.0375pt>
+File: screenshots/partie21.png Graphic file (type png)
+<use screenshots/partie21.png>
+Package pdftex.def Info: screenshots/partie21.png  used on input line 652.
+(pdftex.def)             Requested size: 432.48051pt x 244.14885pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<screenshots/partie3.png, id=293, 848.4197pt x 514.92375pt>
+File: screenshots/partie3.png Graphic file (type png)
+<use screenshots/partie3.png>
+Package pdftex.def Info: screenshots/partie3.png  used on input line 662.
+(pdftex.def)             Requested size: 432.48051pt x 262.48192pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<screenshots/partie4.png, id=294, 826.58812pt x 521.69907pt>
+File: screenshots/partie4.png Graphic file (type png)
+<use screenshots/partie4.png>
+Package pdftex.def Info: screenshots/partie4.png  used on input line 672.
+(pdftex.def)             Requested size: 432.48051pt x 272.96474pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<screenshots/partie41.png, id=295, 1431.84938pt x 820.56563pt>
+File: screenshots/partie41.png Graphic file (type png)
+<use screenshots/partie41.png>
+Package pdftex.def Info: screenshots/partie41.png  used on input line 680.
+(pdftex.def)             Requested size: 432.48051pt x 247.83685pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<screenshots/partie5.png, id=296, 818.30719pt x 816.04875pt>
+File: screenshots/partie5.png Graphic file (type png)
+<use screenshots/partie5.png>
+Package pdftex.def Info: screenshots/partie5.png  used on input line 690.
+(pdftex.def)             Requested size: 432.48051pt x 431.29594pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<screenshots/demo.png, id=297, 739.26187pt x 542.77782pt>
+File: screenshots/demo.png Graphic file (type png)
+<use screenshots/demo.png>
+Package pdftex.def Info: screenshots/demo.png  used on input line 698.
+(pdftex.def)             Requested size: 432.48051pt x 317.53616pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<screenshots/test.png, id=298, 1185.67969pt x 539.76656pt>
+File: screenshots/test.png Graphic file (type png)
+<use screenshots/test.png>
+Package pdftex.def Info: screenshots/test.png  used on input line 706.
+(pdftex.def)             Requested size: 432.48051pt x 196.87726pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[14 <./screenshots/partie2.png>] [15 <./screenshots/partie21.png> <./screenshot
+s/partie3.png>] [16 <./screenshots/partie4.png> <./screenshots/partie41.png>]
+[17 <./screenshots/partie5.png>] [18 <./screenshots/demo.png> <./screenshots/te
+st.png>] [19
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 788--788
+[]|\T1/cmtt/m/n/10.95 knowledge_base.pl\T1/cmr/m/n/10.95 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 788--788
+\T1/cmtt/m/n/10.95 description_logic.md\T1/cmr/m/n/10.95 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 789--789
+[]|\T1/cmtt/m/n/10.95 rules.pl\T1/cmr/m/n/10.95 , \T1/cmtt/m/n/10.95 inference_
+engine.pl\T1/cmr/m/n/10.95 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 790--790
+[]|\T1/cmtt/m/n/10.95 probabilistic_rules.pl\T1/cmr/m/n/10.95 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 791--791
+[]|\T1/cmtt/m/n/10.95 neural_model.py\T1/cmr/m/n/10.95 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 791--791
+\T1/cmtt/m/n/10.95 deepproblog_model.pl\T1/cmr/m/n/10.95 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 792--792
+[]|\T1/cmtt/m/n/10.95 main.py\T1/cmr/m/n/10.95 , \T1/cmtt/m/n/10.95 dataset.csv
+ \T1/cmr/m/n/10.95 (200),
+ []
+
+[20
+
+] (rapport.aux)
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-12-24>
+ ***********
+Package rerunfilecheck Info: File `rapport.out' has not changed.
+(rerunfilecheck)             Checksum: 6C1F120C25715CD0C006DD34D54A5F53;6908.
+ ) 
+Here is how much of TeX's memory you used:
+ 14381 strings out of 467871
+ 215676 string characters out of 5418377
+ 939639 words of memory out of 5000000
+ 42959 multiletter control sequences out of 15000+600000
+ 643984 words of font info for 80 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 75i,12n,79p,389b,2117s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\sawad\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt
+1200.pk> <C:\Users\sawad\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
+0\ecrm1000.pk> <C:\Users\sawad\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
+/dpi600\ectt1000.pk> <C:\Users\sawad\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
+pen/ec/dpi600\ecit1000.pk> <C:\Users\sawad\AppData\Local\MiKTeX\fonts/pk/ljfour
+/jknappen/ec/dpi600\ecbx1095.pk> <C:\Users\sawad\AppData\Local\MiKTeX\fonts/pk/
+ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\sawad\AppData\Local\MiKTeX\fon
+ts/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\sawad\AppData\Local\MiKT
+eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\sawad\AppData\Loca
+l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\sawad\AppDat
+a\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\sawad\
+AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\
+sawad\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\
+Users\sawad\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk
+><C:/Users/sawad/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
+mmi10.pfb><C:/Users/sawad/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmr10.pfb><C:/Users/sawad/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmsy10.pfb>
+Output written on rapport.pdf (21 pages, 1047994 bytes).
+PDF statistics:
+ 994 PDF objects out of 1000 (max. 8388607)
+ 115 named destinations out of 1000 (max. 500000)
+ 304 words of extra memory for PDF output out of 10000 (max. 10000000)
+
