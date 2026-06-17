@@ -21,6 +21,7 @@ RESET  = "\033[0m"; BOLD = "\033[1m"
 ROUGE  = "\033[91m"; ORANGE = "\033[33m"
 JAUNE  = "\033[93m"; VERT = "\033[92m"
 BLEU   = "\033[94m"; VIOLET = "\033[95m"
+ACCENT = "\033[96m"; GRIS   = "\033[90m"
 
 COULEURS_ALERTE = {
     "FRAUDE_CONFIRMEE": ROUGE,
@@ -152,7 +153,7 @@ def rapport(resultats, chemin="rapport_final.txt"):
     print(f"\n  {BOLD}Précision : {precision:.1f}%{RESET} ({corrects}/{len(resultats)})")
     print(f"  Rapport → {chemin}\n")
 
-# ── Mode demo ────────────────────────────────────────────────
+# ── Mode demo (scénario fixe) ─────────────────────────────────
 
 def demo(modele):
     print(f"\n{'='*70}")
@@ -167,26 +168,209 @@ def demo(modele):
          "circuit_revente":"1","label":"fraude_sophistiquee",
          "description":"Accaparement + réseau + blanchiment (inédit)"}
     r = evaluer_hybride_csv(modele, d)
+    afficher_resultat_demo(r)
+
+# ── Mode demo interactif (saisie clavier examinateur) ─────────
+
+def saisir_oui_non(question):
+    while True:
+        rep = input(f"  {question} [o/n] : ").strip().lower()
+        if rep in ("o","oui","1"): return "1"
+        if rep in ("n","non","0"): return "0"
+        print(f"  {ORANGE}⚠ Entrez 'o' (oui) ou 'n' (non){RESET}")
+
+def saisir_nombre(question, defaut, mini=0, maxi=999, entier=True):
+    while True:
+        rep = input(f"  {question} [défaut={defaut}] : ").strip()
+        if rep == "": return str(defaut)
+        try:
+            val = int(rep) if entier else float(rep)
+            if mini <= val <= maxi: return str(val)
+            print(f"  {ORANGE}⚠ Valeur entre {mini} et {maxi}{RESET}")
+        except ValueError:
+            print(f"  {ORANGE}⚠ Entrez un nombre valide{RESET}")
+
+def saisir_texte(question, defaut):
+    rep = input(f"  {question} [défaut={defaut}] : ").strip()
+    return rep if rep else defaut
+
+def afficher_resultat_demo(r):
     col = COULEURS_ALERTE.get(r["alerte"], RESET)
-    print(f"  Acteur      : {r['nom']}")
-    print(f"  Description : {r['description']}")
-    print(f"  NN          : {r['classe_nn']} ({r['confiance_nn']:.2f})")
-    print(f"  Alerte      : {col}{BOLD}{r['alerte']}{RESET}\n")
-    for k,v in r["regles"].items():
-        sym = f"{VERT}✓{RESET}" if v else "✗"
-        print(f"  [{sym}] {k}")
+    print(f"\n{'─'*70}")
+    print(f"  {BOLD}RÉSULTAT DE L'ANALYSE{RESET}")
+    print(f"{'─'*70}")
+    print(f"\n  Acteur       : {BOLD}{r['nom']}{RESET}")
+    print(f"  Description  : {r['description']}")
+    print()
+
+    # Prédiction neuronale
+    print(f"  {BOLD}① Prédiction neuronale (PyTorch){RESET}")
+    print(f"     Classe    : {BOLD}{r['classe_nn']}{RESET}  (confiance : {r['confiance_nn']:.2f})")
+    print()
+
+    # Règles symboliques
+    print(f"  {BOLD}② Règles symboliques Prolog{RESET}")
+    for k, v in r["regles"].items():
+        sym = f"{VERT}✓{RESET}" if v else f"{GRIS}✗{RESET}"
+        etat = f"{VERT}ACTIVE{RESET}" if v else f"{GRIS}inactive{RESET}"
+        print(f"     [{sym}] {k:<28} → {etat}")
+    print()
+
+    # Traces XAI hybrides
+    print(f"  {BOLD}③ Traces XAI neuro-symboliques{RESET}")
     if r["traces"]:
-        print()
         for t in r["traces"]:
-            print(f"  {VIOLET}↳ {t}{RESET}")
+            print(f"     {VIOLET}↳ {t}{RESET}")
+    else:
+        print(f"     {GRIS}(aucune règle hybride activée){RESET}")
+    print()
+
+    # Verdict final
+    print(f"  {'═'*66}")
+    print(f"  {BOLD}  VERDICT FINAL : {col}{r['alerte']}{RESET}")
+    print(f"  {'═'*66}\n")
+
+    # Explication juridique du verdict
+    explications = {
+        "FRAUDE_CONFIRMEE": (
+            f"  {ROUGE}⚠ FRAUDE CONFIRMÉE{RESET}\n"
+            f"  Le système neuro-symbolique a détecté une fraude avérée.\n"
+            f"  La prédiction neuronale EST corroborée par les règles logiques.\n"
+            f"  Ce dossier doit être transmis au parquet pour investigation."
+        ),
+        "SUSPICION_ELEVEE": (
+            f"  {ORANGE}⚠ SUSPICION ÉLEVÉE{RESET}\n"
+            f"  Signal fort détecté — investigation administrative requise.\n"
+            f"  Le dossier présente des indicateurs combinés suspects."
+        ),
+        "SIGNAL_NEURONAL": (
+            f"  {JAUNE}⚡ SIGNAL NEURONAL{RESET}\n"
+            f"  Le réseau neuronal détecte une anomalie comportementale.\n"
+            f"  Surveillance accrue recommandée — pas de confirmation symbolique."
+        ),
+        "ATYPIQUE": (
+            f"  {BLEU}ℹ ATYPIQUE{RESET}\n"
+            f"  Comportement hors norme sans fraude avérée.\n"
+            f"  Dossier à surveiller lors des prochaines transactions."
+        ),
+        "STANDARD": (
+            f"  {VERT}✓ STANDARD{RESET}\n"
+            f"  Aucune anomalie détectée. Dossier conforme aux normes foncières."
+        ),
+    }
+    print(explications.get(r["alerte"], ""))
+    print()
+
+def demo_interactif(modele):
+    print(f"\n{'='*70}")
+    print(f"  {BOLD}{ROUGE}LANDGUARD — MODE DÉMO INTERACTIF{RESET}")
+    print(f"  {GRIS}Soutenance | Scénario saisi par l'examinateur{RESET}")
+    print(f"{'='*70}")
+    print(f"\n  {BOLD}Veuillez saisir les informations du dossier à analyser.{RESET}")
+    print(f"  {GRIS}(Appuyez sur Entrée pour garder la valeur par défaut){RESET}\n")
+    print(f"  {'─'*68}")
+
+    # ── Identité ──────────────────────────────────────────────
+    print(f"\n  {BOLD}{ACCENT}[1/6] IDENTITÉ DU DOSSIER{RESET}")
+    nom         = saisir_texte("Nom de l'acteur", "suspect_exam")
+    type_acteur = saisir_texte("Type (citoyen/agent_public/promoteur/notaire)", "citoyen")
+
+    # ── Parcelles ─────────────────────────────────────────────
+    print(f"\n  {BOLD}{ACCENT}[2/6] PARCELLES{RESET}")
+    nb_urb = saisir_nombre("Nb de parcelles urbaines", 0, 0, 20)
+    nb_rur = saisir_nombre("Nb de parcelles rurales",  0, 0, 20)
+
+    # ── Transactions ──────────────────────────────────────────
+    print(f"\n  {BOLD}{ACCENT}[3/6] TRANSACTIONS{RESET}")
+    freq   = saisir_nombre("Fréquence de revente (ex: 2.5 = 2.5 reventes/an)", 0.0, 0, 10, entier=False)
+    ratio  = saisir_nombre("Ratio plus-value (ex: 2.4 = vendu 2.4x le prix d'achat)", 1.0, 0, 10, entier=False)
+    age    = saisir_nombre("Âge depuis premier achat (années)", 5, 0, 30)
+
+    # ── Réseau ────────────────────────────────────────────────
+    print(f"\n  {BOLD}{ACCENT}[4/6] RÉSEAU & CONNEXIONS{RESET}")
+    liens  = saisir_nombre("Nb de liens réseau suspects", 0, 0, 20)
+    tel    = saisir_oui_non("Partage de numéro de téléphone avec un autre acteur ?")
+    adr    = saisir_oui_non("Partage d'adresse avec un autre acteur ?")
+    iban   = saisir_oui_non("Partage d'IBAN bancaire ?")
+    fam    = saisir_oui_non("Lien familial suspect détecté ?")
+
+    # ── Dossier administratif ─────────────────────────────────
+    print(f"\n  {BOLD}{ACCENT}[5/6] DOSSIER ADMINISTRATIF{RESET}")
+    propre = saisir_oui_non("L'acteur traite-t-il son propre dossier ? (auto-attribution)")
+    famil  = saisir_oui_non("L'acteur traite-t-il un dossier familial ?")
+
+    # ── Circuit ───────────────────────────────────────────────
+    print(f"\n  {BOLD}{ACCENT}[6/6] CIRCUIT DE REVENTE{RESET}")
+    circ   = saisir_oui_non("Circuit circulaire de reventes détecté ? (A→B→C→A)")
+
+    # ── Description libre ─────────────────────────────────────
+    print()
+    desc = saisir_texte("Description libre du scénario", "Scénario saisi par l'examinateur")
+
+    # ── Récapitulatif ─────────────────────────────────────────
+    print(f"\n{'─'*70}")
+    print(f"  {BOLD}RÉCAPITULATIF DU DOSSIER SAISI{RESET}")
+    print(f"{'─'*70}")
+    recap = [
+        ("Nom",                   nom),
+        ("Type acteur",           type_acteur),
+        ("Parcelles urbaines",    nb_urb),
+        ("Parcelles rurales",     nb_rur),
+        ("Fréquence revente",     freq),
+        ("Ratio plus-value",      ratio),
+        ("Âge premier achat",     age),
+        ("Liens réseau",          liens),
+        ("Partage téléphone",     "Oui" if tel=="1" else "Non"),
+        ("Partage adresse",       "Oui" if adr=="1" else "Non"),
+        ("Partage IBAN",          "Oui" if iban=="1" else "Non"),
+        ("Lien familial suspect", "Oui" if fam=="1" else "Non"),
+        ("Auto-attribution",      "Oui" if propre=="1" else "Non"),
+        ("Dossier familial",      "Oui" if famil=="1" else "Non"),
+        ("Circuit circulaire",    "Oui" if circ=="1" else "Non"),
+        ("Description",           desc),
+    ]
+    for k, v in recap:
+        print(f"  {GRIS}{k:<26}{RESET} : {BOLD}{v}{RESET}")
+
+    # ── Confirmation ──────────────────────────────────────────
+    print()
+    conf = input(f"  {BOLD}Lancer l'analyse ? [o/n] : {RESET}").strip().lower()
+    if conf not in ("o","oui","1",""):
+        print(f"\n  {ORANGE}Analyse annulée.{RESET}\n")
+        return
+
+    # ── Analyse ───────────────────────────────────────────────
+    print(f"\n  {GRIS}Analyse en cours...{RESET}")
+    import time; time.sleep(0.6)
+
+    d = {
+        "id": "EXAM", "nom": nom, "type_acteur": type_acteur,
+        "nb_parcelles_urbaines": nb_urb, "nb_parcelles_rurales": nb_rur,
+        "freq_revente": freq, "ratio_plus_value": ratio,
+        "nb_liens_reseau": liens, "partage_telephone": tel,
+        "partage_adresse": adr, "partage_iban": iban,
+        "age_premier_achat": age, "lien_familial_suspect": fam,
+        "traite_dossier_propre": propre, "traite_dossier_familial": famil,
+        "circuit_revente": circ, "label": "inconnu",
+        "description": desc,
+    }
+
+    r = evaluer_hybride_csv(modele, d)
+    afficher_resultat_demo(r)
+
+    # ── Relancer ? ────────────────────────────────────────────
+    again = input(f"  Analyser un autre dossier ? [o/n] : ").strip().lower()
+    if again in ("o","oui","1"):
+        demo_interactif(modele)
 
 # ── Point d'entrée ───────────────────────────────────────────
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="LandGuard Pipeline")
-    parser.add_argument("--acteur",  type=str)
-    parser.add_argument("--demo",    action="store_true")
-    parser.add_argument("--dataset", type=str, default="dataset.csv")
+    parser.add_argument("--acteur",           type=str)
+    parser.add_argument("--demo",             action="store_true")
+    parser.add_argument("--demo-interactif",  action="store_true")
+    parser.add_argument("--dataset",          type=str, default="dataset.csv")
     args = parser.parse_args()
 
     print(f"\n{'='*70}")
@@ -202,9 +386,13 @@ if __name__ == "__main__":
         modele, _ = entrainer(epochs=200, verbose=False)
         sauvegarder(modele)
 
-    # 2. Demo
+    # 2. Demo fixe
     if args.demo:
         demo(modele); sys.exit(0)
+
+    # 2b. Demo interactif soutenance
+    if getattr(args, 'demo_interactif', False):
+        demo_interactif(modele); sys.exit(0)
 
     # 3. Dataset
     print(f"\n  [2/4] Chargement dataset → {args.dataset}")

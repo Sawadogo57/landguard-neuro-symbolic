@@ -22,6 +22,29 @@
 \usepackage{graphicx}
 \graphicspath{{./}{./logos/}}
 \graphicspath{{./}{./logos/}}
+\usepackage{listingsutf8}
+\lstset{
+  inputencoding=utf8,
+  extendedchars=true,
+  literate=
+    {é}{{\'e}}1
+    {è}{{\`e}}1
+    {ê}{{\^e}}1
+    {à}{{\`a}}1
+    {ù}{{\`u}}1
+    {ç}{{\c c}}1
+    {É}{{\'E}}1
+    {À}{{\`A}}1
+}
+\lstset{
+  literate=
+    {é}{{\'e}}1 {è}{{\`e}}1 {à}{{\`a}}1 {ù}{{\`u}}1
+    {É}{{\'E}}1 {È}{{\`E}}1 {ô}{{\^o}}1 {î}{{\^i}}1
+    {→}{{$\rightarrow$}}1
+    {↳}{{$\hookrightarrow$}}1
+    {═}{{=}}1
+    {⚠}{{!}}1
+}
 
 % ── Couleurs ──────────────────────────────────────────────
 \definecolor{accent}{HTML}{2563EB}
@@ -517,6 +540,201 @@ python main.py                    # Pipeline complet 200 dossiers
 python main.py --acteur abdou     # Analyse acteur specifique
 python main.py --demo             # Scenario inconnu examinateur
 \end{lstlisting}
+% ============================================================
+%  SECTION À INSÉRER DANS LE CHAPITRE 7
+%  "Partie 5 — Pipeline, Dataset et Validation"
+%  Après la sous-section 7.1 Pipeline d'orchestration
+%  et AVANT la sous-section 7.2 Dataset synthétique
+% ============================================================
+\subsection{Mode Démonstration Interactive (\texttt{--demo-interactif})}
+
+Afin de faciliter la démonstration lors de la soutenance, un mode interactif
+a été intégré au script \texttt{main.py}. Ce mode permet à l'examinateur de
+saisir lui-même les données d'un dossier foncier inconnu directement au
+clavier, et d'obtenir immédiatement le verdict du système avec ses traces
+d'explicabilité (XAI).
+
+\subsubsection*{Lancement}
+
+\begin{lstlisting}[language=bash]
+python main.py --demo-interactif
+\end{lstlisting}
+
+Le système charge automatiquement le modèle neuronal entraîné
+(\texttt{model\_weights.pth}), puis guide l'utilisateur à travers
+six étapes de saisie structurées.
+
+\subsubsection*{Étape 1 — Identité du dossier}
+
+\begin{lstlisting}
+[1/6] IDENTITE DU DOSSIER
+  Nom de l'acteur               [defaut=suspect_exam] : konate_exam
+  Type acteur (citoyen/agent_public/promoteur/notaire) : citoyen
+\end{lstlisting}
+
+L'examinateur renseigne le nom de l'acteur et son type institutionnel.
+La valeur par défaut est proposée entre crochets — il suffit d'appuyer
+sur \texttt{Entrée} pour la conserver.
+
+\subsubsection*{Étape 2 — Parcelles foncières}
+
+\begin{lstlisting}
+[2/6] PARCELLES
+  Nb de parcelles urbaines      [defaut=0] : 5
+  Nb de parcelles rurales       [defaut=0] : 0
+\end{lstlisting}
+
+Ces valeurs déclenchent les règles d'accaparement (CI-2 : seuil à 3
+parcelles urbaines, AX-01 : seuil à 4).
+
+\subsubsection*{Étape 3 — Transactions foncières}
+
+\begin{lstlisting}
+[3/6] TRANSACTIONS
+  Frequence de revente (ex: 2.5 = 2.5 reventes/an)   [defaut=0.0] : 2.5
+  Ratio plus-value (ex: 2.4 = vendu 2.4x le prix)    [defaut=1.0] : 3.2
+  Age depuis premier achat (annees)                   [defaut=5]   : 1
+\end{lstlisting}
+
+Une fréquence $\geq 1.5$ combinée à un ratio $\geq 2.0$ active
+la règle de spéculation symbolique et la règle hybride HY-04.
+
+\subsubsection*{Étape 4 — Réseau et connexions}
+
+\begin{lstlisting}
+[4/6] RESEAU & CONNEXIONS
+  Nb de liens reseau suspects                   [defaut=0] : 7
+  Partage de numero de telephone ?              [o/n] : o
+  Partage d'adresse avec un autre acteur ?      [o/n] : o
+  Partage d'IBAN bancaire ?                     [o/n] : n
+  Lien familial suspect detecte ?               [o/n] : o
+\end{lstlisting}
+
+Le partage de téléphone entre acheteurs distincts constitue une violation
+de la contrainte CI-5 et active la règle symbolique \texttt{prete\_nom}.
+La règle hybride HY-05 se déclenche si le réseau neuronal prédit
+\texttt{atypique} en combinaison avec ce signal.
+
+\subsubsection*{Étape 5 — Dossier administratif}
+
+\begin{lstlisting}
+[5/6] DOSSIER ADMINISTRATIF
+  L'acteur traite-t-il son propre dossier ? (auto-attribution) [o/n] : n
+  L'acteur traite-t-il un dossier familial ?                   [o/n] : n
+\end{lstlisting}
+
+Ces deux indicateurs activent respectivement les règles C1
+(auto-attribution, violation directe de CI-1) et C2 (conflit d'intérêt
+indirect via lien familial, violation de CI-6).
+
+\subsubsection*{Étape 6 — Circuit de revente}
+
+\begin{lstlisting}
+[6/6] CIRCUIT DE REVENTE
+  Circuit circulaire de reventes detecte ? (A -> B -> C -> A) [o/n] : o
+\end{lstlisting}
+
+Un circuit circulaire de reventes correspond à l'axiome AX-10 et active
+la règle hybride HY-03 si le réseau prédit \texttt{fraudeur\_probable}.
+
+\subsubsection*{Récapitulatif et confirmation}
+
+Avant de lancer l'analyse, le système affiche un récapitulatif complet
+de toutes les données saisies et demande une confirmation explicite :
+
+\begin{lstlisting}
+  ------------------------------------------------------------------
+  RECAPITULATIF DU DOSSIER SAISI
+  ------------------------------------------------------------------
+  Nom                        : konate_exam
+  Type acteur                : citoyen
+  Parcelles urbaines         : 5
+  Parcelles rurales          : 0
+  Frequence revente          : 2.5
+  Ratio plus-value           : 3.2
+  Age premier achat          : 1
+  Liens reseau               : 7
+  Partage telephone          : Oui
+  Partage adresse            : Oui
+  Partage IBAN               : Non
+  Lien familial suspect      : Oui
+  Auto-attribution           : Non
+  Dossier familial           : Non
+  Circuit circulaire         : Oui
+  Description                : Scenario saisi par l'examinateur
+
+  Lancer l'analyse ? [o/n] : o
+\end{lstlisting}
+
+\subsubsection*{Résultat affiché}
+
+Le pipeline produit alors trois niveaux d'explication structurés :
+
+\begin{lstlisting}
+  --------------------------------------------------------------------
+  RESULTAT DE L'ANALYSE
+  ---------------------------------------------------------------------
+  Acteur       : konate_exam
+  Description  : Scenario saisi par l'examinateur
+
+  1 Prediction neuronale (PyTorch)
+     Classe    : fraudeur_probable  (confiance : 0.97)
+
+  2 Regles symboliques Prolog
+       accaparement_urbain       -> ACTIVE
+       prete_nom                 -> ACTIVE
+       blanchiment_circulaire    -> ACTIVE
+       speculation               -> ACTIVE
+       lien_familial_suspect     -> ACTIVE
+       conflit_direct            -> inactive
+       traite_familial           -> inactive
+
+  3 Traces XAI neuro-symboliques
+     -> HY-01: nn=fraudeur_probable AND accaparement_urbain => fraude_confirmee
+     -> HY-03: nn=fraudeur_probable AND blanchiment_circulaire => fraude_confirmee
+     -> HY-08: nn in {speculateur,fraudeur} AND accaparement AND prete_nom
+              => fraude_confirmee [fraude composite]
+
+  ======================================================================
+    VERDICT FINAL : FRAUDE CONFIRMEE
+  ======================================================================
+
+  [!] FRAUDE CONFIRMEE
+  Le systeme neuro-symbolique a detecte une fraude averee.
+  La prediction neuronale EST corroboree par les regles logiques.
+  Ce dossier doit etre transmis au parquet pour investigation.
+
+  Analyser un autre dossier ? [o/n] :
+\end{lstlisting}
+
+\subsubsection*{Architecture de la fonction}
+
+La fonction \texttt{demo\_interactif()} est structurée en trois
+couches successives, conformément à l'architecture globale du système :
+
+\begin{center}
+\begin{tabular}{>{\bfseries}p{3cm} p{5cm} p{6cm}}
+\toprule
+\rowcolor{tablehead}\textcolor{white}{Couche} &
+\textcolor{white}{Fonction} &
+\textcolor{white}{Technologie activée} \\
+\midrule
+Saisie guidée   & 6 étapes interactives avec validation & Python (\texttt{input()}) \\
+Inférence       & \texttt{evaluer\_hybride\_csv(modele, d)} & PyTorch + règles Prolog \\
+Explication XAI & Traces HY + verdict juridique & DeepProbLog (simulé) \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\vspace{0.5cm}
+\begin{center}
+\fcolorbox{green}{green!10}{\parbox{0.92\textwidth}{
+\textbf{\color{green!50!black} Note soutenance :}
+Si l'examinateur souhaite tester plusieurs scénarios successifs, le système
+propose automatiquement \texttt{"Analyser un autre dossier ? [o/n]"} à la
+fin de chaque analyse, sans avoir à relancer la commande.
+}}
+\end{center}
 
 \section{Dataset synthétique (\texttt{dataset.csv})}
 

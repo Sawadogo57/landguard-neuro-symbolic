@@ -17,15 +17,16 @@
 \contentsline {section}{\numberline {0.17}Règles hybrides neuro-symboliques (HY-01 à HY-08)}{9}{section.0.17}%
 \contentsline {section}{\numberline {0.18}Résultats sur les acteurs de test}{10}{section.0.18}%
 \contentsline {section}{\numberline {0.19}Pipeline d'orchestration (\texttt {main.py})}{11}{section.0.19}%
-\contentsline {section}{\numberline {0.20}Dataset synthétique (\texttt {dataset.csv})}{11}{section.0.20}%
-\contentsline {section}{\numberline {0.21}Suite de tests (32 tests — 32/32 OK)}{11}{section.0.21}%
-\contentsline {section}{\numberline {0.22}Performance du pipeline sur 200 dossiers}{12}{section.0.22}%
-\contentsline {section}{\numberline {0.23}Apport de la couche neuro-symbolique}{12}{section.0.23}%
-\contentsline {section}{\numberline {0.24}Comparaison des approches}{12}{section.0.24}%
-\contentsline {section}{\numberline {0.25}Partie 1 -- Base de connaissances Prolog}{13}{section.0.25}%
-\contentsline {section}{\numberline {0.26}Partie 2 -- Moteur d'inf\'erence et explicabilit\'e}{14}{section.0.26}%
-\contentsline {section}{\numberline {0.27}Partie 3 -- Inf\'erence ProbLog}{14}{section.0.27}%
-\contentsline {section}{\numberline {0.28}Partie 4 -- Mod\`ele neuronal et int\'egration DeepProbLog}{14}{section.0.28}%
-\contentsline {section}{\numberline {0.29}Partie 5 -- Pipeline principal et suite de tests}{14}{section.0.29}%
-\contentsline {section}{\numberline {0.30}Limites actuelles}{19}{section.0.30}%
-\contentsline {section}{\numberline {0.31}Perspectives d'amélioration}{19}{section.0.31}%
+\contentsline {subsection}{\numberline {0.19.1}Mode Démonstration Interactive (\texttt {--demo-interactif})}{11}{subsection.0.19.1}%
+\contentsline {section}{\numberline {0.20}Dataset synthétique (\texttt {dataset.csv})}{14}{section.0.20}%
+\contentsline {section}{\numberline {0.21}Suite de tests (32 tests — 32/32 OK)}{14}{section.0.21}%
+\contentsline {section}{\numberline {0.22}Performance du pipeline sur 200 dossiers}{15}{section.0.22}%
+\contentsline {section}{\numberline {0.23}Apport de la couche neuro-symbolique}{15}{section.0.23}%
+\contentsline {section}{\numberline {0.24}Comparaison des approches}{15}{section.0.24}%
+\contentsline {section}{\numberline {0.25}Partie 1 -- Base de connaissances Prolog}{16}{section.0.25}%
+\contentsline {section}{\numberline {0.26}Partie 2 -- Moteur d'inf\'erence et explicabilit\'e}{17}{section.0.26}%
+\contentsline {section}{\numberline {0.27}Partie 3 -- Inf\'erence ProbLog}{17}{section.0.27}%
+\contentsline {section}{\numberline {0.28}Partie 4 -- Mod\`ele neuronal et int\'egration DeepProbLog}{17}{section.0.28}%
+\contentsline {section}{\numberline {0.29}Partie 5 -- Pipeline principal et suite de tests}{17}{section.0.29}%
+\contentsline {section}{\numberline {0.30}Limites actuelles}{22}{section.0.30}%
+\contentsline {section}{\numberline {0.31}Perspectives d'amélioration}{22}{section.0.31}%
