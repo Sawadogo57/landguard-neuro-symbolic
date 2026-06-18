@@ -158,6 +158,11 @@ python main.py --acteur abdou_dramé
 ```bash
 python main.py --demo
 ```
+### Mode démonstration Interactive ( demo-interactif)
+
+```bash
+python main.py--demo-interactif
+```
 
 ### Raisonnement Prolog
 
